@@ -1,0 +1,947 @@
+{
+  "viser_version": "1.0.24",
+  "upstream_client_sha256": "c30bb96cce443904ad1539327b8a289ac717682b83b626c448f04d908e703c1f",
+  "patched_client_sha256": "7bd759555e97b7b0346263205a7779b8d05cd66eeaaae7d7432e357e1a9aacdb",
+  "bridge_sha256": "1b34634add69ac6fcbf3b3aa8fe4caa043ad1e6d79139f9fdde7f278edcb3b79",
+  "patch": "tools/patch_viser.py; docs/vendor/viser/anchorhec-bridge.js",
+  "cases": [
+    {
+      "id": "physical-room",
+      "case_id": "physical-vggt-n15-e977460559eb",
+      "prepared": "results/paper_assets_20260929/prepared/physical-vggt-n15-e977460559eb.json",
+      "prepared_sha256": "a7d5079e2f281a2d65e704e3b2d324a16e74d5c7a0342cd82846f175ca788514",
+      "cloud": "results/paper_assets_20260929/clouds/vggt-050e505f5564-cloud-v1-48f06594a03983c1.npz",
+      "cloud_sha256": "ebb843f09c3119f4042ce68341076d87cf3f6bbaec794458eb6a88a63331eb22",
+      "source_sha256": {
+        "results/physical_v2/room_check/report.json": "2486aa4f86c589b292f88d6af496d7737b04ff7b8ddc1cfc2abf3c9c0415e069",
+        "results/robot_ablation_20260921_111233/ablation_results.json": "bc81317c39ea83498a8fd3a07e7c43d16e17b66491d3e0c3de431f14d26709b7",
+        "results/figure_sources_20261013/source_revision_20260923/results/room.json": "dcf4ad85a87632fbc8d199195b6a7a1717101030295eed6a62e964ed8772fed4",
+        "results/robot_ablation_20260921_111233/runs/xarm6_20260810_marker_gt/w0_e0/e_optimal/clean/trial_00/abl_no_ext_align/xarm6_20260810_marker_gt_vggt_20260921_111525_run_log.json": "c3cbeeb2f7428522e49d121677c382e20f9a73bad5be895f9e88fb723b0c1bee",
+        "experiments/frozen_fkprior_ba_v1.py": "bee5d3f7620b1ddf16858c3a0f82d337677e86859a317a9761b5b06df8b093b8",
+        "data/xarm6_20260810_marker_gt/calibration_data.json": "15e35df46d31aa737fc1d6b8787732f477564f40bbe7419fea030275d5b49caf",
+        "results/probe_zhi2017_20260922/slack_physical10_v1/report.json": "8aa3fcd7300652f2db5437d7fc5c1a137c511339a0c25042ae93797c61f9b1c2",
+        "data/xarm6_20260810_marker_gt/calibration_data.manifest.json": "5aff23abd7c4c5321dbb83ae3b25979f64a15c006f180af50d931641880c9259",
+        "data/xarm6_20260810_marker_gt/real_robot_handeye_ground_truth.json": "e481095e8a3520ae808fa2c7a2059debf7ccf4eb0cb6f4ef191277589edfc48b"
+      },
+      "capture": "results/viser_figures/figure_physical-vggt-n15-e977460559eb_1791787329098124177.json",
+      "capture_sha256": "35be81c5ef0d584cd461009348bb02ac3feaa271d32657bdb81726089bb96410",
+      "filters": {
+        "confidence_percentile": 10,
+        "dark_cutoff": 0,
+        "max_distance": 0.0,
+        "stride": 1,
+        "sor_enabled": false
+      },
+      "source_count": 1522920,
+      "display_count": 1370628,
+      "point_ids_sha256": "01dcfe5ddbc8e20938ed52cf121f032a88243437f1a7da4a63c01fd487395a07",
+      "figure5_saved_point_ids_equal": true,
+      "additional_downsampling": false,
+      "filling": false,
+      "framing": "Shared base-fixed view of Raw and Ours: saved viewing direction, union of both clouds\u2019 3\u201397% bounds, every camera center and base axes. No points removed by framing.",
+      "fixed_pose_source": "final v3 registration of the manuscript (registration_replay, 2026-10-05)",
+      "input_images": [
+        {
+          "index": 0,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0000_color.png",
+          "source_sha256": "c13d320795568953989c994fb233ccfb53c2a90dc2d53aad2124ebcf8ff733cc",
+          "export": "assets/images/inputs/physical-room/input-00.webp",
+          "export_sha256": "b2d6253b1052f77d7b595c0535cacfbe753b65f191b99b4925261e9ef6b69fb5"
+        },
+        {
+          "index": 1,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0001_color.png",
+          "source_sha256": "c4541808a30cba6de07a275d5c9e9c86fd3df280731460123941fd7486e829ed",
+          "export": "assets/images/inputs/physical-room/input-01.webp",
+          "export_sha256": "48ba92573e8e20fe68afae7c34756b2f5b23c6782afb51736f11b0714f5bae6a"
+        },
+        {
+          "index": 2,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0002_color.png",
+          "source_sha256": "c081a4b58b3ea1531736c2fc50e64b3a4e51ec59c2c88361dc867c8304b845d1",
+          "export": "assets/images/inputs/physical-room/input-02.webp",
+          "export_sha256": "35310551e201687b1b3d8e04d20be21840917c4bb1d22103c6438a20151293d3"
+        },
+        {
+          "index": 3,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0004_color.png",
+          "source_sha256": "2b63e7ae6d8b16a87c708e90a3df49477f52897fdcfd2db5ad9c63e51afa0d82",
+          "export": "assets/images/inputs/physical-room/input-03.webp",
+          "export_sha256": "4fa2a42858d42d2aba1eb74f0afea8b8737eaf54dd935b62644f09a13cf9b9ba"
+        },
+        {
+          "index": 4,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0005_color.png",
+          "source_sha256": "19fe56809b78d7d6ec359149b86a727f118b7a4a6e40e3a2163f2a30cd5876d8",
+          "export": "assets/images/inputs/physical-room/input-04.webp",
+          "export_sha256": "7591e65259a89fbdb4facecfdecf088c5c39df30eea7bbab073bf6ac2c789afe"
+        },
+        {
+          "index": 5,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0007_color.png",
+          "source_sha256": "c114513dc072cd23391fe716a58818e598a4c118de3fbf3e3a9cdca1dbbc6907",
+          "export": "assets/images/inputs/physical-room/input-05.webp",
+          "export_sha256": "47b8b69b64a1d56fd5f8767d2459ba7e8078119ffc2c168a84563363916c5de3"
+        },
+        {
+          "index": 6,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0009_color.png",
+          "source_sha256": "a570ea02d97e2553e804eab7cce761b20b368e5f5778b949bb93e41a3b0467c0",
+          "export": "assets/images/inputs/physical-room/input-06.webp",
+          "export_sha256": "918c6d17d849fe8ef9b6fe40c432015b0d9f1021fe2582332041457f87ded1b7"
+        },
+        {
+          "index": 7,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0010_color.png",
+          "source_sha256": "6fa7523ddc09071e2f91cee55b69fadad3c4e30c2034a0a57ec30c035ec0390a",
+          "export": "assets/images/inputs/physical-room/input-07.webp",
+          "export_sha256": "17257936d211f6bdbd8324c6e68d760fd7f56cff8b12b9f1cd8e5483f2111ed3"
+        },
+        {
+          "index": 8,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0011_color.png",
+          "source_sha256": "87251b4e9117d4ac8fdf5633a78c40f1e20916b6a9692d585c8558aae8ffea1d",
+          "export": "assets/images/inputs/physical-room/input-08.webp",
+          "export_sha256": "4c9ea3919b0242283c0b22583bfcc58f04a9eb3bf5aeca7d50120c2322d39a9c"
+        },
+        {
+          "index": 9,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0013_color.png",
+          "source_sha256": "142648f3f74bff7b68c7741066d5b3310abe3370f6885ce5ba9dcb2379a1b7dd",
+          "export": "assets/images/inputs/physical-room/input-09.webp",
+          "export_sha256": "0d3180ee9bda3679b921a58028b42698769b3f383f57f9cca86ab493261d11eb"
+        },
+        {
+          "index": 10,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0014_color.png",
+          "source_sha256": "557ef12fde59aede7a94633922c2eaae5653990bb60bb5ef5a2341c13077f0fb",
+          "export": "assets/images/inputs/physical-room/input-10.webp",
+          "export_sha256": "3f89259d80f04a3d980eb36cb7f88214354409ff4fb60c7056a0300c4a257fe4"
+        },
+        {
+          "index": 11,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0018_color.png",
+          "source_sha256": "7d50d0e57b2337e123db0cfb2862d5778625691694268bb19cabcc9d738700b3",
+          "export": "assets/images/inputs/physical-room/input-11.webp",
+          "export_sha256": "1a0348213e622ee6e2b503221bbc111737ddf0a9cd61fcaa933560aca8665bdb"
+        },
+        {
+          "index": 12,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0021_color.png",
+          "source_sha256": "887c1c8c4285cbf9682f66a1aa817151b950713cdacd14a38f0619edc8bb3617",
+          "export": "assets/images/inputs/physical-room/input-12.webp",
+          "export_sha256": "b3fcd45209aa66144e7466dd65ef669a1fd9d51d42f4bb2ffb2ec37431309931"
+        },
+        {
+          "index": 13,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0022_color.png",
+          "source_sha256": "5a2e4e5b099ab046e37ecd644d38e9ea3c7bf7a2a4c819a7dbdac83dd492a15a",
+          "export": "assets/images/inputs/physical-room/input-13.webp",
+          "export_sha256": "4975c3f79c864fcd71702671c76121939341e4c598fc39e573757631d570ae61"
+        },
+        {
+          "index": 14,
+          "source": "data/xarm6_20260810_marker_gt/images/wrist_camera_0023_color.png",
+          "source_sha256": "5893ecc7cdc78a541d593dd1fb43649c9f3984b4cfcf89b74859ddb56e2e6ebb",
+          "export": "assets/images/inputs/physical-room/input-14.webp",
+          "export_sha256": "e2d3fa4bb71373bcf5aa86bf756ef46abb815f3a4dab0f3b5c9e25962367b672"
+        },
+        {
+          "index": 15,
+          "source": "data/xarm6_20260810_marker_gt/images/external_camera_0000_color.png",
+          "source_sha256": "3175a05278e2fd9607e59877bb701b8dfe929dea2f0303773c10f2a3511be249",
+          "export": "assets/images/inputs/physical-room/input-15.webp",
+          "export_sha256": "c1f3d8dc92ececcaf8a0130053371444d8ef468e93690bd062abfa3976d1a5e5"
+        },
+        {
+          "index": 16,
+          "source": "data/xarm6_20260810_marker_gt/images/external_camera_0004_color.png",
+          "source_sha256": "ffe9f722cf621e47944235191ca23dcdc8ab9c76e7594c4768e82967f5c2717f",
+          "export": "assets/images/inputs/physical-room/input-16.webp",
+          "export_sha256": "6f12e9404a98eb65b54962d80830436f60797a545ca1f96b2500efee0c33e38e"
+        },
+        {
+          "index": 17,
+          "source": "data/xarm6_20260810_marker_gt/images/external_camera_0009_color.png",
+          "source_sha256": "be3c58c374af8283d208949dc2581bfa31499415d7d494ab2538f587b0378367",
+          "export": "assets/images/inputs/physical-room/input-17.webp",
+          "export_sha256": "1e7ec876c8206281e6c7a5edef3b0c62e477c3f03bc155de4719d7c04852103e"
+        },
+        {
+          "index": 18,
+          "source": "data/xarm6_20260810_marker_gt/images/external_camera_0013_color.png",
+          "source_sha256": "2064c6f226d722ea3039687fb5ea893a32d166112344f654c81ca1bc1cdad746",
+          "export": "assets/images/inputs/physical-room/input-18.webp",
+          "export_sha256": "fb2883d0ee9cab31dfbc1fdbafe13d82deab6b4a031205f3aee1456c302fbe48"
+        },
+        {
+          "index": 19,
+          "source": "data/xarm6_20260810_marker_gt/images/external_camera_0021_color.png",
+          "source_sha256": "57539b169c476fb359a2b2546fbf1cee46f1353b59484d86c13c5bac55a9ad55",
+          "export": "assets/images/inputs/physical-room/input-19.webp",
+          "export_sha256": "a6b30f6db79570ebd04f703e64894e78162f4667f4b073bf4b216b1bb9c54ea7"
+        }
+      ],
+      "export": {
+        "path": "assets/scenes/physical-room.viser",
+        "sha256": "a08e72f388af3d53096b6bd01edd39394e6c592b0e80f6fe852a37c721ec7755",
+        "bytes": 18825872
+      }
+    },
+    {
+      "id": "physical-tabletop",
+      "case_id": "physical-vggt-n15-8ffdf963c268",
+      "prepared": "results/paper_assets_20260929/prepared/physical-vggt-n15-8ffdf963c268.json",
+      "prepared_sha256": "ac0a15c44d6530624552398d65ecf5e23a0c88fb33a4fa747f81a40668aa1f7c",
+      "cloud": "results/paper_assets_20260929/clouds/vggt-3d9e285181e3-600000.npz",
+      "cloud_sha256": "5179bbe81b67a3adcdec9352c1029352838a80bf0efec5b52b2ac70b9e21ae64",
+      "source_sha256": {
+        "results/physical_v2/workspace/report.json": "c7673980337df747d512fc2d4840e715dbc16fde4e0c2b37e8f257577341575c",
+        "results/robot_ablation_20260922_144846/ablation_results.json": "bdc8a2cb34e35a12db59f61ffba34a27ea2dae7afa0d70eb062dff6b8c03bd9b",
+        "results/robot_ablation_20260922_144846/runs/xarm6_20260922/w0_e0/e_optimal/clean/trial_03/abl_no_ext_align/xarm6_20260922_vggt_20260922_145540_run_log.json": "164f44e377dac4354d70204ca075462190311bd0c513ee9861b6828c0cb9b7f9",
+        "data/xarm6_20260922/calibration_data.json": "dab02f24337e891c3d19f4c823759d6f03271968de5d21afa2a36fcdac497513",
+        "experiments/frozen_fkprior_ba_v1.py": "bee5d3f7620b1ddf16858c3a0f82d337677e86859a317a9761b5b06df8b093b8",
+        "data/xarm6_20260922/calibration_data.manifest.json": "bc66e83bff334cbc48fe742510ed599263ee9d06544077123af48ee8b0306a39",
+        "data/xarm6_20260922/real_robot_handeye_ground_truth.json": "3c1a7a099da37c3bcd31b74f5517e990f5edde0629e122b0924c63d1bda0818a"
+      },
+      "capture": "results/viser_figures/fig5_tabletop_ours_physical-vggt-n15-8ffdf963c268_1791794925115998810.json",
+      "capture_sha256": "9f6886d4fe916c8d92bb929ab277329c08adcb35d6f9e08aef7b70daf70dc14c",
+      "filters": {
+        "confidence_percentile": 10,
+        "dark_cutoff": 0,
+        "max_distance": 0.8,
+        "stride": 1,
+        "sor_enabled": false
+      },
+      "source_count": 600000,
+      "display_count": 538529,
+      "point_ids_sha256": "5adce8830a0399f073c35a88880d542fcc4388b79f088e2648e0084666e4a84d",
+      "figure5_saved_point_ids_equal": true,
+      "additional_downsampling": false,
+      "filling": false,
+      "framing": "Shared base-fixed view of Raw and Ours: saved viewing direction, union of both clouds\u2019 3\u201397% bounds, every camera center and base axes. No points removed by framing.",
+      "fixed_pose_source": "final v3 registration of the manuscript (registration_replay, 2026-10-05)",
+      "input_images": [
+        {
+          "index": 0,
+          "source": "data/xarm6_20260922/images/wrist_camera_0000_color.png",
+          "source_sha256": "7213e7afec8ec3fad52f945b633fd53f0df91c6a4d6d7f3412d8421ca16e2eb3",
+          "export": "assets/images/inputs/physical-tabletop/input-00.webp",
+          "export_sha256": "3e50b5456326f51fee4bb33f8485b911aeedcbdbf54e0fad3ca374e3b2263604"
+        },
+        {
+          "index": 1,
+          "source": "data/xarm6_20260922/images/wrist_camera_0001_color.png",
+          "source_sha256": "f819f5273f75857435e722de525747e87b1e598e8a7bf0da8233f749d9d16493",
+          "export": "assets/images/inputs/physical-tabletop/input-01.webp",
+          "export_sha256": "43451d7679e60957e6adcb72b67efba9d58aa470cbc3609bb6738c15ae476fe7"
+        },
+        {
+          "index": 2,
+          "source": "data/xarm6_20260922/images/wrist_camera_0004_color.png",
+          "source_sha256": "b0d2425836b3242c4b186ae9c8271bde7018fc96cfbd4fa6c02378371d66d6bd",
+          "export": "assets/images/inputs/physical-tabletop/input-02.webp",
+          "export_sha256": "5511170aef55e0cc6cd6bf01d5927330bfa02bbea5aeba4735101a6e96130045"
+        },
+        {
+          "index": 3,
+          "source": "data/xarm6_20260922/images/wrist_camera_0006_color.png",
+          "source_sha256": "69b618bdbc2e74802e9c1ba5c200e23d7c78c1f19f1db5249fb7cc2bbb45064c",
+          "export": "assets/images/inputs/physical-tabletop/input-03.webp",
+          "export_sha256": "e5547b619eefc1aa431d98e1a484e99028975be28ec15b6bb197d70dd685639f"
+        },
+        {
+          "index": 4,
+          "source": "data/xarm6_20260922/images/wrist_camera_0011_color.png",
+          "source_sha256": "0d3074e0f5c457b0aaed25725e2b0140e2ee98b31bbe86037099cb3a0f04f1a3",
+          "export": "assets/images/inputs/physical-tabletop/input-04.webp",
+          "export_sha256": "3997666ce0f70be8b8be767df6cc6fc71b88c11d9c08673ffc2ece43b8e4e74e"
+        },
+        {
+          "index": 5,
+          "source": "data/xarm6_20260922/images/wrist_camera_0012_color.png",
+          "source_sha256": "deb12b4c666aa76ebdfdfc3dfaa21656755c6dc64058e1f0f79397d27b19a1b8",
+          "export": "assets/images/inputs/physical-tabletop/input-05.webp",
+          "export_sha256": "525ab5856d91964fcaf66d55a4bd33a08d5ac548e15df21908a8420ec5a6811a"
+        },
+        {
+          "index": 6,
+          "source": "data/xarm6_20260922/images/wrist_camera_0013_color.png",
+          "source_sha256": "90cb58006fb9a765370301d47609e9c15b2649d1fb259496adcd445412bea54c",
+          "export": "assets/images/inputs/physical-tabletop/input-06.webp",
+          "export_sha256": "523d97fa873624fcc40002705a3e67328a88cff4781304030deb4f475eee1cc7"
+        },
+        {
+          "index": 7,
+          "source": "data/xarm6_20260922/images/wrist_camera_0015_color.png",
+          "source_sha256": "fa3bfadf4b86d85519a8ec7a8bc505aaffea80a6e264a08bb95a8abe7c9bbbc2",
+          "export": "assets/images/inputs/physical-tabletop/input-07.webp",
+          "export_sha256": "bc26bb111509f3018f9254a70b91373ab26d1f15cf89ccfb7df52b1cbda55cf0"
+        },
+        {
+          "index": 8,
+          "source": "data/xarm6_20260922/images/wrist_camera_0016_color.png",
+          "source_sha256": "a8e15fa5a897260339cb865775f9441d3ba7e1f4ca009e04984b71917525ad9b",
+          "export": "assets/images/inputs/physical-tabletop/input-08.webp",
+          "export_sha256": "8f324cb5ae8c6a3d2225f6e023207e9092357dd0346296d3f8a8e0fe22ca43d0"
+        },
+        {
+          "index": 9,
+          "source": "data/xarm6_20260922/images/wrist_camera_0017_color.png",
+          "source_sha256": "1adbc2784703cc487f8f51a6591e3a93965a8c57fe05f6c8ec2e1f0a51877288",
+          "export": "assets/images/inputs/physical-tabletop/input-09.webp",
+          "export_sha256": "2d0cfba4ff13fc00dbd93be308a912d6be685878056979117b42237a19f46d23"
+        },
+        {
+          "index": 10,
+          "source": "data/xarm6_20260922/images/wrist_camera_0021_color.png",
+          "source_sha256": "27126384c9c6d922c2415745391d9c98da4ce50b10b82924d2fa91b191f98af8",
+          "export": "assets/images/inputs/physical-tabletop/input-10.webp",
+          "export_sha256": "7cbddcfee1b852557a6f8e45a1ea8d3ffd2c4a59fa55ea997a3fb9c63bc25a21"
+        },
+        {
+          "index": 11,
+          "source": "data/xarm6_20260922/images/wrist_camera_0022_color.png",
+          "source_sha256": "bca8bd7ee355df40f648069900870e95cc4c5693a286683b2461a6299a1255ec",
+          "export": "assets/images/inputs/physical-tabletop/input-11.webp",
+          "export_sha256": "93eb44d4f26d1e91d8657468f8b5d4040e8c82fec1a940fe5e54b751f0aecd27"
+        },
+        {
+          "index": 12,
+          "source": "data/xarm6_20260922/images/wrist_camera_0023_color.png",
+          "source_sha256": "7e1130d99511f5db6c099ebf9a18fa8c9c4d065fbe4ee2976657b4c5a6c17e79",
+          "export": "assets/images/inputs/physical-tabletop/input-12.webp",
+          "export_sha256": "df68c1139312d708e4152d75c7e1879330d25852953963717af7bb0410dc9078"
+        },
+        {
+          "index": 13,
+          "source": "data/xarm6_20260922/images/wrist_camera_0028_color.png",
+          "source_sha256": "d7b15b3a92de7f348d0605c70843541d09f88d3da0004a2428895e6a31ad48f3",
+          "export": "assets/images/inputs/physical-tabletop/input-13.webp",
+          "export_sha256": "94527645d660a98df8cd07f6d14773d321875bc8dabbd7be26c8439159c368fd"
+        },
+        {
+          "index": 14,
+          "source": "data/xarm6_20260922/images/wrist_camera_0029_color.png",
+          "source_sha256": "a440e2544742048a0c2d89eb97300dd1768ac25d3d155feac1029c94a78fb122",
+          "export": "assets/images/inputs/physical-tabletop/input-14.webp",
+          "export_sha256": "984a3784696ba369b747fa4123391ecc97d36f02bde38bd384d8490dec3bebd8"
+        },
+        {
+          "index": 15,
+          "source": "data/xarm6_20260922/images/external_camera_0000_color.png",
+          "source_sha256": "80de2db7b49b73c13a77ac1ac15cfa7f4237cf29351c05c38ae8f5df002b6e0e",
+          "export": "assets/images/inputs/physical-tabletop/input-15.webp",
+          "export_sha256": "b5ecdea12fe86c5582627a9ccd7bec5be4724dcc953a125564a99b8509b119cc"
+        },
+        {
+          "index": 16,
+          "source": "data/xarm6_20260922/images/external_camera_0006_color.png",
+          "source_sha256": "3225ea2528ab10aa57016b9dba6e55c408373ac5128bc317c1ed05d878de0702",
+          "export": "assets/images/inputs/physical-tabletop/input-16.webp",
+          "export_sha256": "d080c5ca71ef499d548fd3ec36d2031440de3849ed71e73bbe528e05cf5f6ba5"
+        },
+        {
+          "index": 17,
+          "source": "data/xarm6_20260922/images/external_camera_0013_color.png",
+          "source_sha256": "31232bc95995b8849490a846e66e513588dda506fbac523cbe93717e594ee0ec",
+          "export": "assets/images/inputs/physical-tabletop/input-17.webp",
+          "export_sha256": "3d472c7b879e243f046f65d0390376dae4cdd58c086b817045a94a0655058d25"
+        },
+        {
+          "index": 18,
+          "source": "data/xarm6_20260922/images/external_camera_0017_color.png",
+          "source_sha256": "02c61a8e5ebf578ef04a5fb7e13dc70b7a9541f4fe28b807f0965e0a86c62c28",
+          "export": "assets/images/inputs/physical-tabletop/input-18.webp",
+          "export_sha256": "dfeab552adc5381f9db0cbe0b3cdd09dfbf95c3158f1815936318795362a6b72"
+        },
+        {
+          "index": 19,
+          "source": "data/xarm6_20260922/images/external_camera_0023_color.png",
+          "source_sha256": "4aa86680af076cee68a59d119cdb944fc5d7bc429bdd82a574954f5e4bc92a7f",
+          "export": "assets/images/inputs/physical-tabletop/input-19.webp",
+          "export_sha256": "80a79d5c07e5ceda0846a9f8fc80351549e639ac74189cdb4170097db3f8f4fa"
+        }
+      ],
+      "export": {
+        "path": "assets/scenes/physical-tabletop.viser",
+        "sha256": "4df6435204673f6a56aee30d5fd8feb55c434095b3ef17c6d2ae20e04b053a3b",
+        "bytes": 7311214
+      }
+    },
+    {
+      "id": "sim-room",
+      "case_id": "three-vggt-n15-87205b6f6f1f",
+      "prepared": "results/paper_assets_20260929/prepared/three-vggt-n15-87205b6f6f1f.json",
+      "prepared_sha256": "2339b88fe366f4183491ac840008d30c923aead5f2110ed023a9c04cf6f9e128",
+      "cloud": "results/paper_assets_20260929/clouds/vggt-68d934d6a862-cloud-v1-5b9999e3302e36ea.npz",
+      "cloud_sha256": "a1327590eae00f7f5d1c5c2c41f86511a7050a84ae41c706f2b3b7051255ea1f",
+      "source_sha256": {
+        "results/paper_review_campaign_20260912/d165_three360/report.json": "259447a15cb95b3c586d445a1e9abf673d6deb85639ddb64bac3f59f3a2ba351",
+        "results/robot_ablation_20260911_045537/ablation_results.json": "4ce90996a1a1c90f0e473efda8ffaf2e67c6c90ea76ce93e89212c9d21f7ea13",
+        "results/frozen_fkprior_ba_v1/confirm_three/report.json": "2143b4efb0db9473ab72218295db38511cb7f6ea1a1ef625760b0cb44edb5685",
+        "results/paper_review_campaign_20260912/c9_extension750_v1/report.json": "c1fd4841ef7d8f6ab4449fd648b3971ee0adb668f9f96985402418e2cf285f74",
+        "results/robot_ablation_20260911_045537/runs/EXP-EXT/Multicam_textured_multiring/w1_e0_1_2_3/e_optimal/clean/trial_00/abl_full/EXP-EXT_Multicam_textured_multiring_vggt_20260911_045607_run_log.json": "5365277bb5aec0482a1dfa8c0094ab9efd5772fadf4bbfe28a7a3865baecf15f",
+        "data/EXP-EXT/Multicam_textured_multiring/calibration_data.json": "e576abcf47d13da57c6c0b20835803ea1a139deefdc41385b01c8e15188e5b89",
+        "experiments/frozen_fkprior_ba_v1.py": "bee5d3f7620b1ddf16858c3a0f82d337677e86859a317a9761b5b06df8b093b8",
+        "data/EXP-EXT/Multicam_textured_multiring/calibration_data.manifest.json": "bf1e07ffcb977d9234688eaa7d2006168a04fed7846e39f3e8750be0c8ed571d"
+      },
+      "capture": "results/viser_figures/1014_room_three-vggt-n15-87205b6f6f1f_1791943155635131751.json",
+      "capture_sha256": "b1ce245aa91d9c46a1ef6e8392b0778dee02c6f1726482ee90213f95bb276d16",
+      "filters": {
+        "confidence_percentile": 10,
+        "dark_cutoff": 0,
+        "max_distance": 0,
+        "stride": 1,
+        "sor_enabled": false
+      },
+      "source_count": 2000000,
+      "display_count": 1800000,
+      "point_ids_sha256": "1a5291873d31e2c33eb8452c25501abd4b4968a5b03be9fcdc0ab98795f1f0a9",
+      "figure5_saved_point_ids_equal": false,
+      "additional_downsampling": false,
+      "filling": false,
+      "framing": "Shared base-fixed view of Raw and Ours: saved viewing direction, union of both clouds\u2019 3\u201397% bounds, every camera center and base axes. No points removed by framing.",
+      "fixed_pose_source": "final v3 registration of the manuscript (registration_replay, 2026-10-05)",
+      "input_images": [
+        {
+          "index": 0,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0001.png",
+          "source_sha256": "c61a6c4c85aaa83ae4666d2ea3c19214dcb792dd095e8360349ea8284ad64c81",
+          "export": "assets/images/inputs/sim-room/input-00.webp",
+          "export_sha256": "7d24d0bdeeebc3832695fef45f3f9e6ef502d4172e611b85165bc4dff89e4d99"
+        },
+        {
+          "index": 1,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0002.png",
+          "source_sha256": "9ae1beb74dd500d339a3bbcbd449e3156592380322bfe3257c33962428817069",
+          "export": "assets/images/inputs/sim-room/input-01.webp",
+          "export_sha256": "9915d3a2dfd90774d56b4ed0086504c4bf7b56fa87a5eeffd7cc403220a98588"
+        },
+        {
+          "index": 2,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0003.png",
+          "source_sha256": "79a8200d1d40b1a95a6acf7ce9614c0479eed7068db27b018f623f7f385359e1",
+          "export": "assets/images/inputs/sim-room/input-02.webp",
+          "export_sha256": "0883615c32b74fe2eaedf89bef1ae982e741d1875da7b5013caa80066231659a"
+        },
+        {
+          "index": 3,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0005.png",
+          "source_sha256": "1ccfcc683fb6b0040dd7cd299f38efd947ac44c67d23ab9a13910da6c736e8ba",
+          "export": "assets/images/inputs/sim-room/input-03.webp",
+          "export_sha256": "cb99c6990b5b00e7a43fe4f415f5e700b168b5ac76230832384fec93cd06eca8"
+        },
+        {
+          "index": 4,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0006.png",
+          "source_sha256": "cbea9ccd60d7607b2dbbeceaa0a64ef068152f03330a0f9016bed7cced669751",
+          "export": "assets/images/inputs/sim-room/input-04.webp",
+          "export_sha256": "3b641dab10f8ac15fa904f7affcede89b7644ca5c094abeefdba8089fcdbf5a7"
+        },
+        {
+          "index": 5,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0008.png",
+          "source_sha256": "eb9d7dd8ef093076470df266052e8806446b28ea360a0ac7a88928c624f85f1b",
+          "export": "assets/images/inputs/sim-room/input-05.webp",
+          "export_sha256": "d06930e144e47015d0bfed7dbfce15b26908c4c58c14b261cb4b6b0b7c45740a"
+        },
+        {
+          "index": 6,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0009.png",
+          "source_sha256": "3697f98d98c1aaf8486868e39ecce53fbd497b19fa7a186dcd563e2572706177",
+          "export": "assets/images/inputs/sim-room/input-06.webp",
+          "export_sha256": "dca0a609b6e16aab20166cfd2ce6a1d67b337a69ed169c851101a221fa22423b"
+        },
+        {
+          "index": 7,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0011.png",
+          "source_sha256": "3d8328b716c467171bc41f61d236b9a9eb1edab85f6d71a807064039b95052d7",
+          "export": "assets/images/inputs/sim-room/input-07.webp",
+          "export_sha256": "a280c09f04f05b200015849f2a5b6903110dcc64f4064a32ab1f64324629e411"
+        },
+        {
+          "index": 8,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0016.png",
+          "source_sha256": "7b3b7eff35883b38d2500210be11950818078715bfe464e7b5d9c24d588db666",
+          "export": "assets/images/inputs/sim-room/input-08.webp",
+          "export_sha256": "d05d77b324fbe78904a34dedefb0a67a24a20ea74bfe845344ea3aeaa831ba94"
+        },
+        {
+          "index": 9,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0017.png",
+          "source_sha256": "e7517a9b3123a727f2f3d47ad873c59fb7331d83a50e258f28367a920eda03f3",
+          "export": "assets/images/inputs/sim-room/input-09.webp",
+          "export_sha256": "0ee5020c8f6c112598dacb750038a43af8e54ab682ec33041318cd456704c685"
+        },
+        {
+          "index": 10,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0018.png",
+          "source_sha256": "df7febc73fe4fa32fe08cbd1af3fae3acc816b45c4f12fb5ff4ec86e877831f8",
+          "export": "assets/images/inputs/sim-room/input-10.webp",
+          "export_sha256": "606f73d663dba6355a7dac8c302436abb1e1141bf988499849361002fb9487e0"
+        },
+        {
+          "index": 11,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0019.png",
+          "source_sha256": "a17a003aa20a11a8baa43cca3df3fcacd726bc65fa62a985e7a5e00f5fb89cd8",
+          "export": "assets/images/inputs/sim-room/input-11.webp",
+          "export_sha256": "69b377c76f2464f33e00c15be3b3824060416be8bdfc25bd224dc8d7f7c3fb20"
+        },
+        {
+          "index": 12,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0020.png",
+          "source_sha256": "82a4bbefdd9382500137fdb072a2d312d40ff2b016d2b1c79c0d332611e60ced",
+          "export": "assets/images/inputs/sim-room/input-12.webp",
+          "export_sha256": "6d60135c1135a17a8bfbbebf3c1d136a281f651eb452b9fd915dca20260c754d"
+        },
+        {
+          "index": 13,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0021.png",
+          "source_sha256": "cd3496102063a4b320d7b304b76d909263e6d192d58dfb3c40945baf4aeb5aa2",
+          "export": "assets/images/inputs/sim-room/input-13.webp",
+          "export_sha256": "a2a6ca2efe00b6d6e0d1e5b62646e0b62d7ba7895f7c13e916938a054aacbd83"
+        },
+        {
+          "index": 14,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/wrist_camera_01_0023.png",
+          "source_sha256": "eb7b5f1cef3da048769d897fd525bfb74445e65fae4a5780817b1ba028529bed",
+          "export": "assets/images/inputs/sim-room/input-14.webp",
+          "export_sha256": "62d3fe48c37a3ecb4b35c8e138ca3ed61eb7f974540171d17f0c3f8cf7a26e35"
+        },
+        {
+          "index": 15,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_0001.png",
+          "source_sha256": "e078d1761a5ca1b27c4b8df39864a8e5a6c5617801813d22b1d479cd1e692777",
+          "export": "assets/images/inputs/sim-room/input-15.webp",
+          "export_sha256": "561607fb40a7d3e6447969f345f8a52b8a765225f23b46a99bfe4f348cdc7770"
+        },
+        {
+          "index": 16,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_0005.png",
+          "source_sha256": "db0032b2619aefb2b4406434c17f72a33251390a268718580da91ebc09fb23bc",
+          "export": "assets/images/inputs/sim-room/input-16.webp",
+          "export_sha256": "a7f927aabfc2fb5a1b6c6410f9efabcc1fea461b6ce2171ecdedcb2dbe2c9553"
+        },
+        {
+          "index": 17,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_0009.png",
+          "source_sha256": "74c0cf5af8c14ea595fba4f646cbd6b62ab05fa373fec737facec39c8c4d0d9b",
+          "export": "assets/images/inputs/sim-room/input-17.webp",
+          "export_sha256": "68e16083e5fa46a97053e2a2c488d3af343e519b985ff8715ae8b3be0650e71e"
+        },
+        {
+          "index": 18,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_0017.png",
+          "source_sha256": "7c0085a6cae687db42ee2f69302c930c9d62a90e549bca127789fa06803de0d8",
+          "export": "assets/images/inputs/sim-room/input-18.webp",
+          "export_sha256": "8c9347e5fc21cc79586c3105ad140ef93131040a62ae29ff055787d95152d580"
+        },
+        {
+          "index": 19,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_0020.png",
+          "source_sha256": "abd154e8cd831f089a58535fafaf1ac863b26b4b2e3bd5362b21e2dae8580e1c",
+          "export": "assets/images/inputs/sim-room/input-19.webp",
+          "export_sha256": "17683eb04fcc08443d007bb37fb524860cf5f1b26849918af131acb6e0467795"
+        },
+        {
+          "index": 20,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_01_0001.png",
+          "source_sha256": "13c1dec1945ff5ee6e4596a3b3a776bc15de2f509c2c79e40ccb722942e95d11",
+          "export": "assets/images/inputs/sim-room/input-20.webp",
+          "export_sha256": "9e2a449ae259bdea57bb5823b7694cbf6f3d69ff5fc9999869b3ba0fe0799cd1"
+        },
+        {
+          "index": 21,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_01_0005.png",
+          "source_sha256": "3d07d1e1fbfc77bb6ead4fb33787b432d635dd452fa251b31d29016c43f3eb67",
+          "export": "assets/images/inputs/sim-room/input-21.webp",
+          "export_sha256": "9e30df932c3a778e15639c0909bc4962488ea0ac531aafc15102c0d6d38b481f"
+        },
+        {
+          "index": 22,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_01_0009.png",
+          "source_sha256": "a2d24a32302b4169217a622727d25de34f276a81ff844037fb6e6428d170cd22",
+          "export": "assets/images/inputs/sim-room/input-22.webp",
+          "export_sha256": "40499b79e32b39dd6f2a8911a7c0e4dca644ab82b835797d266cfc1c76731f04"
+        },
+        {
+          "index": 23,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_01_0017.png",
+          "source_sha256": "8089dd1a41ee079d555925b02d672c2917c2d00ff932dfe38b59b7c9f5ad6e1d",
+          "export": "assets/images/inputs/sim-room/input-23.webp",
+          "export_sha256": "9f064f137b21fba083d94119ca8933b65ff625b4287372eaffcb5a7486e07dd2"
+        },
+        {
+          "index": 24,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_01_0020.png",
+          "source_sha256": "99b14623a1b660cfdd501d2436ebc224e9e21bc70b6cfd5c2a08714ee21b91ba",
+          "export": "assets/images/inputs/sim-room/input-24.webp",
+          "export_sha256": "55e11b02d28fe01df55c7d5c225da2911ad7088e4f288f3268fa40e42506d252"
+        },
+        {
+          "index": 25,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_02_0001.png",
+          "source_sha256": "de4404ded748daf9b0ceded1697d4c1690e3f4ec86e33e9b78c2707cfac8c5ec",
+          "export": "assets/images/inputs/sim-room/input-25.webp",
+          "export_sha256": "44811003ca6ce56f46b4d70b3a142cb042a5a5770f78988ad9b6f4093ea98124"
+        },
+        {
+          "index": 26,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_02_0005.png",
+          "source_sha256": "968f149d37b9de25ed1e5c6fdcbab05a487c48582b48a51a01130e742a056a39",
+          "export": "assets/images/inputs/sim-room/input-26.webp",
+          "export_sha256": "ddc6c1b19cafe321813c128e624b8e3a1d040dc96b53ae485bcd63e5efc6392f"
+        },
+        {
+          "index": 27,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_02_0009.png",
+          "source_sha256": "e89070e10188aa90508e4c770624ae2c1e32003c464771c1cb8eb58c7334d165",
+          "export": "assets/images/inputs/sim-room/input-27.webp",
+          "export_sha256": "504c491718712bceb90d8c3e718e8d67096e225b538fa60cc2d10a6f77cbb192"
+        },
+        {
+          "index": 28,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_02_0017.png",
+          "source_sha256": "3c7385485c993f674612519cdff151bacf40636451e1397205c213e669d692ab",
+          "export": "assets/images/inputs/sim-room/input-28.webp",
+          "export_sha256": "052d47e68d5a370c8254ef11a889de9c09c6beb4277e8be0db28b728caf61ad4"
+        },
+        {
+          "index": 29,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_02_0020.png",
+          "source_sha256": "3587a83abb9b03add690caa463d148cd69b8714b193384aef44479fffa100c9c",
+          "export": "assets/images/inputs/sim-room/input-29.webp",
+          "export_sha256": "1c2856e09147114f8b7dc35c14a500847e306d622c2e29f1815a62773c2d1100"
+        },
+        {
+          "index": 30,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_03_0001.png",
+          "source_sha256": "953e9ea47c157d324a0f02a0273c245b443085e008ac4b5b546a550d8278f0f6",
+          "export": "assets/images/inputs/sim-room/input-30.webp",
+          "export_sha256": "7f3310873a9ef5dcbf098fd839baf243b12c0a0bf7135ee621c2b2ddd5bbb8ab"
+        },
+        {
+          "index": 31,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_03_0005.png",
+          "source_sha256": "a81759bc97cb10fbb5dc20ec8fe98909dca0e891184c4f4739ba0e61642e3d59",
+          "export": "assets/images/inputs/sim-room/input-31.webp",
+          "export_sha256": "55170ebca5d9a72b2db8e457d15e812a34a60509383b05b4e7a899bb5765ab94"
+        },
+        {
+          "index": 32,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_03_0009.png",
+          "source_sha256": "d7912ede934ae2169cb52d268ddf07d55f7e3ccddcccd49823d467bd8b3a3a59",
+          "export": "assets/images/inputs/sim-room/input-32.webp",
+          "export_sha256": "702c0bd5ee5d0df4e661264670cccc0a8460a4a921d1d28915473111e5e5342b"
+        },
+        {
+          "index": 33,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_03_0017.png",
+          "source_sha256": "9603c053c073808079f2e9b877f0cb7609f9cd842a48e960f0a909fbe1cca0d7",
+          "export": "assets/images/inputs/sim-room/input-33.webp",
+          "export_sha256": "de622b37a09fd5163b08084d7522ef29bfa6c86bbb2e39f1cf0b07dd4e324920"
+        },
+        {
+          "index": 34,
+          "source": "data/EXP-EXT/Multicam_textured_multiring/images/external_camera_03_0020.png",
+          "source_sha256": "b128e0e504d061205d9ddf22cc89080328bb2c6966bb28fff66ddf90842e0864",
+          "export": "assets/images/inputs/sim-room/input-34.webp",
+          "export_sha256": "f38f3a80ac38c208e95762ae7eb1a246bb2f561301ec657e762f05990fbea065"
+        }
+      ],
+      "export": {
+        "path": "assets/scenes/sim-room.viser",
+        "sha256": "91506607e6acf233873aa4e6063fd636705f1de762ad415407b38f43bb2cd34b",
+        "bytes": 23633211
+      }
+    },
+    {
+      "id": "sim-tabletop",
+      "case_id": "three-vggt-n15-6cae8017d1b0",
+      "prepared": "results/paper_assets_20260929/prepared/three-vggt-n15-6cae8017d1b0.json",
+      "prepared_sha256": "f965a6848e3e5672d0566c177cf5dee4031c70c2b86606a531cd6e17994310f8",
+      "cloud": "results/paper_assets_20260929/clouds/vggt-26ba3bec3104-cloud-v1-7763925e82b707f7.npz",
+      "cloud_sha256": "f1cecdac4cdc8f7595d7515e161d20ec765d2b4384e3a7bfa3fdb8863a4ce745",
+      "source_sha256": {
+        "results/paper_review_campaign_20260912/d165_three360/report.json": "259447a15cb95b3c586d445a1e9abf673d6deb85639ddb64bac3f59f3a2ba351",
+        "results/robot_ablation_20260911_045537/ablation_results.json": "4ce90996a1a1c90f0e473efda8ffaf2e67c6c90ea76ce93e89212c9d21f7ea13",
+        "results/frozen_fkprior_ba_v1/confirm_three/report.json": "2143b4efb0db9473ab72218295db38511cb7f6ea1a1ef625760b0cb44edb5685",
+        "results/paper_review_campaign_20260912/c9_extension750_v1/report.json": "c1fd4841ef7d8f6ab4449fd648b3971ee0adb668f9f96985402418e2cf285f74",
+        "results/robot_ablation_20260911_045537/runs/EXP-UNIFIED/Workspace_R030_B_multiring/w1_e0_1_2_3/e_optimal/clean/trial_04/abl_full/EXP-UNIFIED_Workspace_R030_B_multiring_vggt_20260911_053841_run_log.json": "ebb57df540b634f9acd140692fd9012752e1345853ad25a2b0fe71ac32943998",
+        "data/EXP-UNIFIED/Workspace_R030_B_multiring/calibration_data.json": "ccfff1b99b232ae5f9f383b8b9b433ae4757ce6ef2e5adf16fc9022730570050",
+        "experiments/frozen_fkprior_ba_v1.py": "bee5d3f7620b1ddf16858c3a0f82d337677e86859a317a9761b5b06df8b093b8",
+        "data/EXP-UNIFIED/Workspace_R030_B_multiring/calibration_data.manifest.json": "87b5b1d5d231f5181ff8ce5bc7cc886cb6f1e3858a6dc00dceafd3eb5983fcbc"
+      },
+      "capture": "results/viser_figures/1014_tabletop_589_three-vggt-n15-6cae8017d1b0_1791959072605370498.json",
+      "capture_sha256": "747641f3d79cbefd9fe6ea977abf7a91826b86fa19dceb613d6b49f4cca618f4",
+      "filters": {
+        "confidence_percentile": 10,
+        "dark_cutoff": 0,
+        "max_distance": 0,
+        "stride": 1,
+        "sor_enabled": false
+      },
+      "source_count": 2000000,
+      "display_count": 1800000,
+      "point_ids_sha256": "9de7d6b5fadd12708222c9b7b707de33f45bf37c4c378b94085925be6e52eab0",
+      "figure5_saved_point_ids_equal": false,
+      "additional_downsampling": false,
+      "filling": false,
+      "framing": "Shared base-fixed view of Raw and Ours: saved viewing direction, union of both clouds\u2019 3\u201397% bounds, every camera center and base axes. No points removed by framing.",
+      "fixed_pose_source": "final v3 registration of the manuscript (registration_replay, 2026-10-05)",
+      "input_images": [
+        {
+          "index": 0,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0001.png",
+          "source_sha256": "3f227a6ebd57f1a54b8b1ca469b1b9659d90171486c943fed1b6e5a770d43842",
+          "export": "assets/images/inputs/sim-tabletop/input-00.webp",
+          "export_sha256": "109bfcd405668e567d33965857c53f48f7829e6bb98ab380781c120427da17c1"
+        },
+        {
+          "index": 1,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0003.png",
+          "source_sha256": "f111ddb76338f5a6ed2bd9ce23a4dc67dba53c7bd3293d10c3adc3bec0557d6e",
+          "export": "assets/images/inputs/sim-tabletop/input-01.webp",
+          "export_sha256": "c1d0b3db35b4bb2b8317690fdf5e9f3118dc89d4dad0a52b7ee13833cc587c25"
+        },
+        {
+          "index": 2,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0006.png",
+          "source_sha256": "f82d32d83eedcdc34b7d76765d3f25b1f2d9f663969a86dd08c85947eb35610a",
+          "export": "assets/images/inputs/sim-tabletop/input-02.webp",
+          "export_sha256": "8f5ad146a3002916c2a27d329c8322a5376f73476cc45473cf0a3d0da0218dcb"
+        },
+        {
+          "index": 3,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0007.png",
+          "source_sha256": "2c075b3ca071756dcb7edbd7458e59c1d61d4b4b12ca0aef6777784f15310155",
+          "export": "assets/images/inputs/sim-tabletop/input-03.webp",
+          "export_sha256": "cfc6cb2c28f427ab43f562f36be1ade8a878bb40adbfde4e19b2ae2d742ff49f"
+        },
+        {
+          "index": 4,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0009.png",
+          "source_sha256": "eb9a5cbceb404025a30bd71c596b0d7e26d5e19f7c91131b61dae045dbc31fb2",
+          "export": "assets/images/inputs/sim-tabletop/input-04.webp",
+          "export_sha256": "fa7c4ce7bf3e1875b8d4c9ad25b2a2ec1d50eb12cc45d75205b8e9fba57db94b"
+        },
+        {
+          "index": 5,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0010.png",
+          "source_sha256": "f19a7d2704de02e0722d1b1be06902cb946a5ac5069f4ebc568125d7c95b0aa9",
+          "export": "assets/images/inputs/sim-tabletop/input-05.webp",
+          "export_sha256": "26b532114e2ba8bf282cd104a71f8a6e5957e641fd0ae17779e003793ba889e5"
+        },
+        {
+          "index": 6,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0012.png",
+          "source_sha256": "260d967d0f5b9c27b9239f4bc4f195c8c8e3089be8c36c6ee4d3ccb368b17c88",
+          "export": "assets/images/inputs/sim-tabletop/input-06.webp",
+          "export_sha256": "a3814f5b20fc87fa035433ae26e547bce3d8e2cd99cd4a1be56391162c40f1bf"
+        },
+        {
+          "index": 7,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0013.png",
+          "source_sha256": "7b783824f07ad4648d7ded3c6f111b80497e8b1238214a28d260bf7b91a7b9f6",
+          "export": "assets/images/inputs/sim-tabletop/input-07.webp",
+          "export_sha256": "a651aea603335e778015e3bfd4afa29e36433ab1d247b2f86b9d82e0cde87b02"
+        },
+        {
+          "index": 8,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0014.png",
+          "source_sha256": "d94d0aa1a14ccb7d0eb6a9d71b5c9275513a5cc851316d5701ff1ca2a7f7f241",
+          "export": "assets/images/inputs/sim-tabletop/input-08.webp",
+          "export_sha256": "44f77f71269f3fa5321960eb41d4b751bebf8bdd45328dccd57c17071b927dec"
+        },
+        {
+          "index": 9,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0015.png",
+          "source_sha256": "c0fd32cbfe096a9eaff25bb37053fcac0ea09414e203c94e1784e51cd7c223c8",
+          "export": "assets/images/inputs/sim-tabletop/input-09.webp",
+          "export_sha256": "806821714aad4e801255f81e361ceafb88f3ec8a7057e3a60da5c1f921840da5"
+        },
+        {
+          "index": 10,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0019.png",
+          "source_sha256": "686956b30b25094474745c3fd13d8f6fa55be51c2a59ca56505a1d1328ad2d07",
+          "export": "assets/images/inputs/sim-tabletop/input-10.webp",
+          "export_sha256": "4dab674f2a6056be3d4a3cbeedafc6453ad09e4e65301f63f1ac2d894493a48b"
+        },
+        {
+          "index": 11,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0020.png",
+          "source_sha256": "0a7b014f25d88ae85dd1b10e67034f008b780a5c54b7152cf601d0f888a9a5e5",
+          "export": "assets/images/inputs/sim-tabletop/input-11.webp",
+          "export_sha256": "87a90d8b8a52b848e9c727187faeb59840bea2c32f7bd9afa0ee8dc85285890a"
+        },
+        {
+          "index": 12,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0021.png",
+          "source_sha256": "0529192c80af2f190bde339128871407575bd49c60b227a99991455e8815bbdc",
+          "export": "assets/images/inputs/sim-tabletop/input-12.webp",
+          "export_sha256": "3989f74f4054671c24dca1d13103eb829ffecb5610f9a93a3be32980d891c371"
+        },
+        {
+          "index": 13,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0023.png",
+          "source_sha256": "96456df087cea062d68556b50ac77dc916d2aea2d5d09e072f0adb2798fac811",
+          "export": "assets/images/inputs/sim-tabletop/input-13.webp",
+          "export_sha256": "6d01a2b6661d476a32e6dc8ead6f50aefc7f84a4cb60a4624422b37c4930c5fd"
+        },
+        {
+          "index": 14,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/wrist_camera_01_0024.png",
+          "source_sha256": "1bad56f7d7071c2f582a03b80ce1049a8c8c7957aa7e86708d0affaca224ea58",
+          "export": "assets/images/inputs/sim-tabletop/input-14.webp",
+          "export_sha256": "f447e40808903a16edd163dd7daa405765a4b1a0302e3a91c711acfa347b3219"
+        },
+        {
+          "index": 15,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_0001.png",
+          "source_sha256": "4be612de1cd0c8d606dbf11d42e07f6a5f6d46e9269533036c2cf87e4c6432f4",
+          "export": "assets/images/inputs/sim-tabletop/input-15.webp",
+          "export_sha256": "6f1c91880fd9922b99bb51e4a34f14cdba13c7465165053d5a872a7bde2409ee"
+        },
+        {
+          "index": 16,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_0007.png",
+          "source_sha256": "ea9f3c491ba913dfe810860063ea4fb40f0c8db69d5165280df5d233bdc471b4",
+          "export": "assets/images/inputs/sim-tabletop/input-16.webp",
+          "export_sha256": "7c92939fd72d1f828dcd2a6a45e811e3e79d3b34d125827b9e6f1e86a4e3f5f4"
+        },
+        {
+          "index": 17,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_0012.png",
+          "source_sha256": "586ef2a35c966eebb0fe3e9c82df664a56102e0161edea96cc8b1ca15d844a8c",
+          "export": "assets/images/inputs/sim-tabletop/input-17.webp",
+          "export_sha256": "aa18d054295666d06fa9d7d56a3f28b4cfd8ebb6bc6065168dbba372266f11e1"
+        },
+        {
+          "index": 18,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_0015.png",
+          "source_sha256": "ec6c969a58f6eaa4d9cfb340ebec98cf5c8df4ce6027494b1ef9c8db23345841",
+          "export": "assets/images/inputs/sim-tabletop/input-18.webp",
+          "export_sha256": "96b67b4014dce3ce0d84ddae57e1dd6f86f1c003fd2337e040badbb5ae275bfa"
+        },
+        {
+          "index": 19,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_0021.png",
+          "source_sha256": "c16f5b2865b729413242b5d34d3782197ad937d43c2f25abae1bf2e9b94bb224",
+          "export": "assets/images/inputs/sim-tabletop/input-19.webp",
+          "export_sha256": "66fce17a1822b2707b238b2944521b2e28780c7daeedeb7ab91a3ef1900d5aee"
+        },
+        {
+          "index": 20,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_01_0001.png",
+          "source_sha256": "7c4f1eeef7f2dffe338bf73abbfa70526df68d1ed0f63212c9f3bd6d277b7ba2",
+          "export": "assets/images/inputs/sim-tabletop/input-20.webp",
+          "export_sha256": "65000ddb7d12577ed0226013518aff1a3abe22d49d5151300b19a05e4668ff19"
+        },
+        {
+          "index": 21,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_01_0007.png",
+          "source_sha256": "00612e594392aefd717ac359075c97effa1335fbd5b1be5c208fb23ae605f399",
+          "export": "assets/images/inputs/sim-tabletop/input-21.webp",
+          "export_sha256": "9f6543204d3cd6b25cd082c82d16476a0f0f50a28c9600b50bc7b67dc411f67b"
+        },
+        {
+          "index": 22,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_01_0012.png",
+          "source_sha256": "cb27e1f3f8259a0a84356d92e1fcfcb942cadc8d9321f70c305454fa86e710f2",
+          "export": "assets/images/inputs/sim-tabletop/input-22.webp",
+          "export_sha256": "2d976d6b88c7256f17c12b20f6cd997444dedcc6c0823103194e17ee4d9d8c1d"
+        },
+        {
+          "index": 23,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_01_0015.png",
+          "source_sha256": "4efee9630b2cabc4bde78b4268b2a8e9350f32c0a0c955b3aea6cfa71de25eb7",
+          "export": "assets/images/inputs/sim-tabletop/input-23.webp",
+          "export_sha256": "a3aef374cefd2e3a48079f520749a1eb45c33d2cfa82f15b0f33822aca0e0fb2"
+        },
+        {
+          "index": 24,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_01_0021.png",
+          "source_sha256": "50623f03fe21713fe782501dd6a63d6e6154b946a9c6b09a04aa71b852300109",
+          "export": "assets/images/inputs/sim-tabletop/input-24.webp",
+          "export_sha256": "64ddf1352413cce94d5cd03e96ae2a59ed74154facb5e2e6eb3a45739245aa01"
+        },
+        {
+          "index": 25,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_02_0001.png",
+          "source_sha256": "c56f517fcb6af4f3b6cbe0e95ca8b690818c54ee70c9301101c787321bf37cf4",
+          "export": "assets/images/inputs/sim-tabletop/input-25.webp",
+          "export_sha256": "6f424e1307d1d8ba30370c4d831bffe0c65b78732bdc5415316e8736149510e2"
+        },
+        {
+          "index": 26,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_02_0007.png",
+          "source_sha256": "843bdbaa43078d1b6dcc95032ba24616f8d09425488e7c96b6cb1b9fd5a24ab8",
+          "export": "assets/images/inputs/sim-tabletop/input-26.webp",
+          "export_sha256": "4b05556cdeaf19e795f9a87216f14f98179e283c59c1791d741dbb908c1a9dc6"
+        },
+        {
+          "index": 27,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_02_0012.png",
+          "source_sha256": "aa97fb8d09a65fdca9b8025a7a2b76a913db8c2374890d250380bcf2d11c783e",
+          "export": "assets/images/inputs/sim-tabletop/input-27.webp",
+          "export_sha256": "411da75a2fa5d62c40986b5eac6ff14a275439f0cd3f9204104304a18ad3626c"
+        },
+        {
+          "index": 28,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_02_0015.png",
+          "source_sha256": "8c5bbfea4cd84c826ebadd060ca6ba198f44ea827d96bc89533db52bb9ce7ffc",
+          "export": "assets/images/inputs/sim-tabletop/input-28.webp",
+          "export_sha256": "3ae160d1d04920714cd034e8a4f5e455ad0d7798d8455a855a69438c0798b7ae"
+        },
+        {
+          "index": 29,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_02_0021.png",
+          "source_sha256": "94ea22fbf95531a21271b292a3c4ad9d323a79e8ec7964f4c05dc7071254dc87",
+          "export": "assets/images/inputs/sim-tabletop/input-29.webp",
+          "export_sha256": "551273ba6059425d1e58024cc46323f16bebacf9495f192f6750d944a82b0ebb"
+        },
+        {
+          "index": 30,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_03_0001.png",
+          "source_sha256": "55ecfa2a376a9033c486e821eda6c9862d2d621874419806de122c64f8b1e1e9",
+          "export": "assets/images/inputs/sim-tabletop/input-30.webp",
+          "export_sha256": "87af8e9df7ab36ec86cc0b8d85ecbcb653f6c3d924c8fdc522c61c2adaccd04a"
+        },
+        {
+          "index": 31,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_03_0007.png",
+          "source_sha256": "e06d55583e7596e928266570d3804165a7cea2ed6ec1e285478673eca23026e2",
+          "export": "assets/images/inputs/sim-tabletop/input-31.webp",
+          "export_sha256": "86a0389c699ec2687a9eb6e72f96bc9854795665f18465a276420c7513796e23"
+        },
+        {
+          "index": 32,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_03_0012.png",
+          "source_sha256": "e1ebf14ce5f46fb7e45bbfc4ab751839b097102a3f57231c4ea5e258575d55cb",
+          "export": "assets/images/inputs/sim-tabletop/input-32.webp",
+          "export_sha256": "f9de4add89817a147d0f0f16452ab4539794b3bac11c93d7530364e519d92bc7"
+        },
+        {
+          "index": 33,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_03_0015.png",
+          "source_sha256": "746e895c84b0bbe1aebc0d2777c38853f90615733e0b30ffe4dc8b3398187d87",
+          "export": "assets/images/inputs/sim-tabletop/input-33.webp",
+          "export_sha256": "69a7fb3751eb5bcc944bb836938603b90a10479841b414530cbe577933414658"
+        },
+        {
+          "index": 34,
+          "source": "data/EXP-UNIFIED/Workspace_R030_B_multiring/images/external_camera_03_0021.png",
+          "source_sha256": "0b91392697c499b2b4ad2a679c8de854145c9ec38af2d5e117841d5a54df1943",
+          "export": "assets/images/inputs/sim-tabletop/input-34.webp",
+          "export_sha256": "fae473453aa41d02b177d2e13096ef75c05ea3cecaadca9b2e9ab5c21b1793c4"
+        }
+      ],
+      "export": {
+        "path": "assets/scenes/sim-tabletop.viser",
+        "sha256": "05f834876d5278df4a6dce52a16b71d3c43a6d0817671ace5f3631c45ed095e6",
+        "bytes": 24314422
+      }
+    }
+  ]
+}

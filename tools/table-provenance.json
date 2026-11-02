@@ -1,0 +1,76 @@
+{
+  "source_pdf": "HEVFM/paper/root.pdf",
+  "source_pdf_sha256": "a285a1b38a82f9cdac151f45c5c49b32a2d830425fd38b1bec68426e4093e735",
+  "source_page_size_pt": [
+    612,
+    792
+  ],
+  "renderer": "pdftoppm version 22.02.0",
+  "dpi": 300,
+  "coordinate_system": "top-left origin; point rectangles are [left, top, right, bottom]; pages are 1-based",
+  "pixel_rounding": "floor left/top, ceil right/bottom; crop width/height are differences",
+  "processing": "Direct PDF rendering and rectangular crop only; no text, numbers, captions, or footnotes are redrawn.",
+  "reproduce": "python3 tools/export_tables.py",
+  "tables": [
+    {
+      "id": "table-ii",
+      "title": "Table II: Simulation Accuracy across Reconstruction Backbones",
+      "source_page": 5,
+      "crop_rectangle_pt": [
+        54.0,
+        44.0,
+        558.0,
+        289.15
+      ],
+      "crop_rectangle_px": {
+        "x": 225,
+        "y": 183,
+        "width": 2100,
+        "height": 1022
+      },
+      "output": "docs/assets/images/table-ii.png",
+      "dimensions_px": [
+        2100,
+        1022
+      ],
+      "bytes": 399992,
+      "sha256": "8fa9a0cb19c45b25b536fbe1dc628c1f964823ad62c28f21279d764bd57e7943",
+      "included": [
+        "table label",
+        "caption",
+        "all data cells",
+        "all footnotes"
+      ]
+    },
+    {
+      "id": "table-iv",
+      "title": "Table IV: Physical-Robot Evaluation",
+      "source_page": 6,
+      "crop_rectangle_pt": [
+        309.0,
+        168.0,
+        562.0,
+        388.0
+      ],
+      "crop_rectangle_px": {
+        "x": 1287,
+        "y": 700,
+        "width": 1055,
+        "height": 917
+      },
+      "output": "docs/assets/images/table-iv.png",
+      "dimensions_px": [
+        1055,
+        917
+      ],
+      "bytes": 187284,
+      "sha256": "e4e03622d0a06048743598e21de1a93b4d1c5486b0f4e4cd2758d7a83558be41",
+      "included": [
+        "table label",
+        "caption",
+        "all data cells",
+        "all footnotes"
+      ]
+    }
+  ]
+}

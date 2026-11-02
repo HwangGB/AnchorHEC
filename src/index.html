@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ffffff">
+  <title>{{TITLE}}</title><meta name="description" content="{{DESCRIPTION}}"><link rel="canonical" href="{{CANONICAL_URL}}">
+  <meta property="og:type" content="website"><meta property="og:title" content="{{TITLE}}"><meta property="og:description" content="{{DESCRIPTION}}"><meta property="og:url" content="{{CANONICAL_URL}}"><meta property="og:image" content="{{CANONICAL_URL}}assets/images/physical-scenes.webp"><meta name="twitter:card" content="summary_large_image">
+  {{SCHOLAR_METADATA}}
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/css/site.css"><script defer src="assets/js/site.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<main id="main">
+  <section class="publication-header container" aria-labelledby="title">
+    <h1 id="title">AnchorHEC: Targetless Hand-Eye Calibration<br class="title-break"> of Wrist and Fixed Cameras</h1>
+    {{AUTHOR_BLOCK}}
+    <div class="publication-links">{{PAPER_BUTTON}}{{CODE_BUTTON}}<a class="button" href="#video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7Z"/></svg>Video</a><a class="button" href="#interactive"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="m12 2 9 5v10l-9 5-9-5V7Zm0 10 9-5M12 12 3 7m9 5v10"/></svg>3D Viewer</a></div>
+  </section>
+  <section class="teaser container" aria-label="Overview"><figure>
+    <a href="assets/images/pipeline.webp" class="figure-link" data-zoom data-caption="AnchorHEC overview · Figure 1" aria-label="Enlarge the method overview"><img src="assets/images/pipeline.webp" alt="Wrist and optional fixed-camera images, robot end-effector poses and known intrinsics are used for shared reconstruction initialization, wrist refinement, and fixed-camera registration." width="2918" height="1500" fetchpriority="high"></a>
+    <figcaption><strong>AnchorHEC</strong> calibrates wrist and fixed cameras in a single procedure using RGB images, robot kinematics, and known camera intrinsics.</figcaption>
+  </figure></section>
+  <section class="section abstract-section" id="abstract" aria-labelledby="abstract-title"><div class="container narrow"><h2 id="abstract-title">Abstract</h2><p>{{ABSTRACT}}</p></div></section>
+  <section class="section container" id="video" aria-labelledby="video-title"><h2 id="video-title">Video</h2><video id="overview-video" controls controlsList="nodownload" playsinline preload="none" width="1920" height="1080" poster="assets/images/physical-scenes.webp" aria-label="AnchorHEC supplementary video"><source src="assets/videos/overview.mp4" type="video/mp4"><p>Your browser does not support embedded video.</p></video><p class="video-caption">1:54 · English captions embedded · No audio</p><p class="small-copy">Introductory footage is excerpted and arranged from <a href="https://droid-dataset.github.io/">DROID</a> (Khazatsky et al., RSS 2024), under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. </p></section>
+  <section class="section container" id="interactive" aria-labelledby="interactive-title">
+    <h2 id="interactive-title">Interactive 3D Results</h2>
+    <p class="section-intro">Choose an input image to locate its camera. Switch between the raw reconstruction and AnchorHEC to compare camera poses.</p>
+    <div class="scene-tabs" role="group" aria-label="Choose a 3D scene"><button type="button" data-scene="physical-room" aria-pressed="true">Physical · Room</button><button type="button" data-scene="physical-tabletop" aria-pressed="false">Physical · Tabletop</button><button type="button" data-scene="sim-room" aria-pressed="false">Simulation · Room</button><button type="button" data-scene="sim-tabletop" aria-pressed="false">Simulation · Tabletop</button></div>
+    <div id="viewer-workbench">
+      <div class="viewer-toolbar"><div class="mode-toggle" role="group" aria-label="Before and after calibration"><button type="button" data-mode="raw" aria-pressed="false">Before · Raw</button><button type="button" data-mode="ours" aria-pressed="true">After · AnchorHEC</button></div><div class="viewer-actions"><button type="button" id="reset-view" disabled>Reset view</button><button type="button" id="fullscreen-view">Full screen</button></div></div>
+      <div class="viewer-layout">
+        <aside class="input-panel" aria-label="Input camera images"><h3>Input images</h3><p class="input-hint">Click to highlight a camera.</p><div class="input-group"><h4>Wrist camera <span id="wrist-input-count"></span></h4><div class="input-images" id="wrist-inputs" role="group" aria-label="Wrist camera inputs"></div></div><div class="input-group"><h4>Fixed camera <span id="fixed-input-count"></span></h4><div class="input-images" id="fixed-inputs" role="group" aria-label="Fixed camera inputs"></div></div></aside>
+        <div class="viewer-stage" id="viewer-stage"><div class="viewer-placeholder" id="viewer-placeholder"><img id="viewer-poster" src="assets/images/reconstruction.webp" width="1280" height="520" alt="Preview of the physical room reconstruction." loading="lazy"><button class="button" id="load-viewer" type="button">Load 3D view</button></div><iframe id="scene-viewer" title="Interactive AnchorHEC scene" hidden></iframe><span class="viewer-frame-label" id="coordinate-label">AnchorHEC · robot-base frame (m)</span></div>
+      </div>
+      <p id="selected-input" class="selected-input" role="status">Select an input image to highlight its camera in 3D.</p>
+      <p class="viewer-help" id="viewer-status" role="status">Drag to rotate · Right-drag to pan · Scroll or pinch to zoom</p>
+    </div>
+    <div class="scene-legend" aria-label="Camera colors"><span><i class="wrist"></i>Wrist camera</span><span><i class="fixed"></i>Fixed camera</span><span><i class="selected"></i>Selected input</span></div>
+    <noscript><p>The interactive viewer requires JavaScript. Static results are shown below.</p></noscript>
+  </section>
+  <section class="section container narrow" id="method" aria-labelledby="method-title">
+    <h2 id="method-title">Method</h2>
+    <p>Three stages connect scene geometry with robot kinematics.</p>
+    <ol class="method-steps">
+      <li><h3>Initialize in a shared frame</h3><p>Jointly reconstruct wrist and fixed-camera images. Use wrist motion and FK to estimate the wrist transform, metric scale, and robot-base alignment.</p><p class="step-output">Shared reconstruction → initial transforms</p></li>
+      <li><h3>Refine the wrist transform</h3><p>Combine FK-guided pair selection with image-based bundle adjustment. Allow FK and lens corrections when fixed-constraint refinement fails or retains too few inliers.</p><p class="step-output">Wrist images + FK → refined wrist transform</p></li>
+      <li><h3>Register fixed cameras</h3><p>Triangulate metric points from the refined wrist transform and FK. Use dense correspondences and pose estimation to register each fixed camera.</p><p class="step-output">Metric scene geometry → fixed-camera poses</p></li>
+    </ol>
+    <p>The wrist camera is calibrated to the end effector, and fixed cameras are calibrated to the robot base. Fixed-camera images are optional for wrist calibration. The method requires known intrinsics, rigid camera mounts, shared observations of a textured stationary scene, and wrist rotations about non-parallel axes.</p>
+  </section>
+  <section class="section container" id="results" aria-labelledby="results-title">
+    <h2 id="results-title">Experimental Results</h2><p>Across 3D Foundation model backbones(DUSt3R, MASt3R, and VGGT), AnchorHEC reduces simulation calibration error by <strong>86.4% in translation</strong> and <strong>71.6% in rotation</strong> relative to JCR for wrist cameras and JCR + SF for fixed cameras.</p>
+    <figure class="simulation-figure"><a class="figure-link" href="assets/images/simulation.webp" data-zoom data-caption="Simulation examples · Figure 4" aria-label="Enlarge simulation results"><img src="assets/images/simulation.webp" alt="Room and tabletop simulation point clouds and camera poses compared with ground truth." width="853" height="641" loading="lazy"></a><figcaption>Simulation examples with 15 wrist poses and four fixed cameras. Orange: wrist cameras; blue: fixed cameras.</figcaption></figure>
+    <figure class="paper-table"><a class="figure-link" href="assets/images/table-ii.png" data-zoom data-caption="Simulation calibration errors · Table II" aria-label="Enlarge Table II"><img src="assets/images/table-ii.png" width="2100" height="1022" loading="lazy" alt="Table II from the manuscript. Simulation calibration errors for DUSt3R, MASt3R, VGGT, and ViPE, with wrist and fixed cameras. Complete values and partial-output footnotes are included."></a><figcaption>Table II. Simulation results from the manuscript. Click to enlarge.</figcaption></figure>
+    <h3>Physical-Robot Experiments</h3><p>We evaluate AnchorHEC on two xArm6 acquisitions, room and tabletop, each with one wrist camera and one fixed camera. Reference transforms come from separate target-based calibration. Repeated subsets reuse these acquisitions.</p>
+    <figure><a class="figure-link" href="assets/images/physical.webp" data-zoom data-caption="Physical-robot experiments · Figure 5" aria-label="Enlarge physical-robot results"><img src="assets/images/physical.webp" alt="Room and tabletop physical robot setups beside reconstructed geometry and calibrated camera poses." width="2261" height="393" loading="lazy"></a><figcaption>Physical setups and calibrated reconstructions for example 15-pose subsets.</figcaption></figure>
+
+    <figure class="paper-table physical-table"><a class="figure-link" href="assets/images/table-iv.png" data-zoom data-caption="Physical-robot calibration errors · Table IV" aria-label="Enlarge Table IV"><img src="assets/images/table-iv.png" width="1055" height="917" loading="lazy" alt="Table IV from the manuscript. Physical room and tabletop calibration errors at 5, 15, and 25 wrist poses, including the failed-output note. Zhi has lower tabletop wrist rotation error at 15 poses (1.09 degrees versus 1.11 for AnchorHEC)."></a><figcaption>Table IV. Physical-robot results from the manuscript. Click to enlarge.</figcaption></figure>
+  </section>
+
+  <section class="section container narrow citation-section" id="citation" aria-labelledby="citation-title"><h2 id="citation-title">BibTeX</h2><div class="citation-content">{{CITATION_BLOCK}}{{CONTACT_BLOCK}}</div></section>
+</main>
+<footer class="footer"><div class="container narrow"><p>Page layout inspired by <a href="https://nerfies.github.io/">Nerfies</a>. Interactive scenes use <a href="https://viser.studio/">Viser</a>.</p><p><a href="{{REPOSITORY_URL}}">Website source</a> · <a href="credits.html">Credits and usage</a></p></div></footer>
+<dialog id="figure-dialog" aria-labelledby="figure-dialog-caption"><button class="dialog-close" aria-label="Close enlarged figure">×</button><figure><img id="figure-dialog-image" alt=""><figcaption id="figure-dialog-caption"></figcaption></figure><a id="figure-original" target="_blank" rel="noopener">Open original image ↗</a></dialog>
+<script id="scenes-data" type="application/json">{{SCENES_JSON}}</script>
+</body>
+</html>

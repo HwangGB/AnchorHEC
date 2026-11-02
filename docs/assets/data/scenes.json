@@ -1,0 +1,1414 @@
+{
+  "viser_version": "1.0.24",
+  "client": "vendor/viser/index.html",
+  "scenes": [
+    {
+      "id": "physical-room",
+      "label": "Physical \u00b7 Room",
+      "domain": "physical",
+      "case_id": "physical-vggt-n15-e977460559eb",
+      "seed": 527,
+      "points": 1370628,
+      "wrist_poses": 15,
+      "fixed_cameras": 1,
+      "point_size": 0.002,
+      "point_shape": "square",
+      "filters": {
+        "confidence_percentile": 10,
+        "dark_cutoff": 0,
+        "max_distance": 0.0,
+        "stride": 1,
+        "sor_enabled": false
+      },
+      "figure5_exact_points": true,
+      "transform": {
+        "scale": 3.3791126202972985,
+        "position": [
+          0.1717679433858637,
+          -0.2681072789285157,
+          0.8216018790262172
+        ],
+        "wxyz": [
+          -0.4843609702113352,
+          0.5948333077961048,
+          -0.4917227921778892,
+          0.41203941816901385
+        ],
+        "rotation": [
+          [
+            0.17686442705544278,
+            -0.18583456528050557,
+            0.9665321974923321
+          ],
+          [
+            -0.9841378146791362,
+            -0.04720629237742956,
+            0.17100972977743745
+          ],
+          [
+            0.013846882715095626,
+            -0.9814464225351187,
+            -0.19123593682175008
+          ]
+        ]
+      },
+      "camera": {
+        "position": [
+          -2.968483170094061,
+          2.865036926620022,
+          0.46086060466883266
+        ],
+        "look_at": [
+          2.3048480507303757,
+          0.7227677984623663,
+          0.47068053491781814
+        ],
+        "up": [
+          -0.0015983926152129957,
+          0.0006493404284418913,
+          0.9999985117479204
+        ],
+        "fov": 1.3089969389957474
+      },
+      "inputs": [
+        {
+          "id": "input-00",
+          "index": 0,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 01",
+          "image": "assets/images/inputs/physical-room/input-00.webp",
+          "raw_node": "/Raw/wrist/0",
+          "ours_node": "/Ours/wrist/0"
+        },
+        {
+          "id": "input-01",
+          "index": 1,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 02",
+          "image": "assets/images/inputs/physical-room/input-01.webp",
+          "raw_node": "/Raw/wrist/1",
+          "ours_node": "/Ours/wrist/1"
+        },
+        {
+          "id": "input-02",
+          "index": 2,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 03",
+          "image": "assets/images/inputs/physical-room/input-02.webp",
+          "raw_node": "/Raw/wrist/2",
+          "ours_node": "/Ours/wrist/2"
+        },
+        {
+          "id": "input-03",
+          "index": 3,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 04",
+          "image": "assets/images/inputs/physical-room/input-03.webp",
+          "raw_node": "/Raw/wrist/3",
+          "ours_node": "/Ours/wrist/3"
+        },
+        {
+          "id": "input-04",
+          "index": 4,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 05",
+          "image": "assets/images/inputs/physical-room/input-04.webp",
+          "raw_node": "/Raw/wrist/4",
+          "ours_node": "/Ours/wrist/4"
+        },
+        {
+          "id": "input-05",
+          "index": 5,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 06",
+          "image": "assets/images/inputs/physical-room/input-05.webp",
+          "raw_node": "/Raw/wrist/5",
+          "ours_node": "/Ours/wrist/5"
+        },
+        {
+          "id": "input-06",
+          "index": 6,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 07",
+          "image": "assets/images/inputs/physical-room/input-06.webp",
+          "raw_node": "/Raw/wrist/6",
+          "ours_node": "/Ours/wrist/6"
+        },
+        {
+          "id": "input-07",
+          "index": 7,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 08",
+          "image": "assets/images/inputs/physical-room/input-07.webp",
+          "raw_node": "/Raw/wrist/7",
+          "ours_node": "/Ours/wrist/7"
+        },
+        {
+          "id": "input-08",
+          "index": 8,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 09",
+          "image": "assets/images/inputs/physical-room/input-08.webp",
+          "raw_node": "/Raw/wrist/8",
+          "ours_node": "/Ours/wrist/8"
+        },
+        {
+          "id": "input-09",
+          "index": 9,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 10",
+          "image": "assets/images/inputs/physical-room/input-09.webp",
+          "raw_node": "/Raw/wrist/9",
+          "ours_node": "/Ours/wrist/9"
+        },
+        {
+          "id": "input-10",
+          "index": 10,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 11",
+          "image": "assets/images/inputs/physical-room/input-10.webp",
+          "raw_node": "/Raw/wrist/10",
+          "ours_node": "/Ours/wrist/10"
+        },
+        {
+          "id": "input-11",
+          "index": 11,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 12",
+          "image": "assets/images/inputs/physical-room/input-11.webp",
+          "raw_node": "/Raw/wrist/11",
+          "ours_node": "/Ours/wrist/11"
+        },
+        {
+          "id": "input-12",
+          "index": 12,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 13",
+          "image": "assets/images/inputs/physical-room/input-12.webp",
+          "raw_node": "/Raw/wrist/12",
+          "ours_node": "/Ours/wrist/12"
+        },
+        {
+          "id": "input-13",
+          "index": 13,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 14",
+          "image": "assets/images/inputs/physical-room/input-13.webp",
+          "raw_node": "/Raw/wrist/13",
+          "ours_node": "/Ours/wrist/13"
+        },
+        {
+          "id": "input-14",
+          "index": 14,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 15",
+          "image": "assets/images/inputs/physical-room/input-14.webp",
+          "raw_node": "/Raw/wrist/14",
+          "ours_node": "/Ours/wrist/14"
+        },
+        {
+          "id": "input-15",
+          "index": 15,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 1",
+          "image": "assets/images/inputs/physical-room/input-15.webp",
+          "raw_node": "/Raw/fixed/0",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-16",
+          "index": 16,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 2",
+          "image": "assets/images/inputs/physical-room/input-16.webp",
+          "raw_node": "/Raw/fixed/1",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-17",
+          "index": 17,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 3",
+          "image": "assets/images/inputs/physical-room/input-17.webp",
+          "raw_node": "/Raw/fixed/2",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-18",
+          "index": 18,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 4",
+          "image": "assets/images/inputs/physical-room/input-18.webp",
+          "raw_node": "/Raw/fixed/3",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-19",
+          "index": 19,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 5",
+          "image": "assets/images/inputs/physical-room/input-19.webp",
+          "raw_node": "/Raw/fixed/4",
+          "ours_node": "/Ours/fixed/0"
+        }
+      ],
+      "poster": "assets/images/scene-physical-room.png",
+      "note": "",
+      "file": {
+        "path": "assets/scenes/physical-room.viser",
+        "bytes": 18825872
+      }
+    },
+    {
+      "id": "physical-tabletop",
+      "label": "Physical \u00b7 Tabletop",
+      "domain": "physical",
+      "case_id": "physical-vggt-n15-8ffdf963c268",
+      "seed": 5328,
+      "points": 538529,
+      "wrist_poses": 15,
+      "fixed_cameras": 1,
+      "point_size": 0.002,
+      "point_shape": "square",
+      "filters": {
+        "confidence_percentile": 10,
+        "dark_cutoff": 0,
+        "max_distance": 0.8,
+        "stride": 1,
+        "sor_enabled": false
+      },
+      "figure5_exact_points": true,
+      "transform": {
+        "scale": 0.5038420315586024,
+        "position": [
+          0.15599562199526,
+          -0.08835589272856217,
+          0.3004387786410696
+        ],
+        "wxyz": [
+          0.20965052099755493,
+          -0.15859776932987613,
+          0.9647532441188702,
+          -0.012024332462018254
+        ],
+        "rotation": [
+          [
+            -0.8617868132180829,
+            -0.30097360981140864,
+            0.40833610513951873
+          ],
+          [
+            -0.31105724007264834,
+            0.9494043259848607,
+            0.04329918243592544
+          ],
+          [
+            -0.40070797591489105,
+            -0.08970123744030925,
+            -0.9118041489485934
+          ]
+        ]
+      },
+      "camera": {
+        "position": [
+          0.5396830810967039,
+          -1.8701532912939212,
+          1.3449312585425672
+        ],
+        "look_at": [
+          -0.23195858873158542,
+          0.09296574735661346,
+          0.33889724465687115
+        ],
+        "up": [
+          -0.15748283522144485,
+          0.400649114961196,
+          0.9025959468618422
+        ],
+        "fov": 1.3089969389957474
+      },
+      "inputs": [
+        {
+          "id": "input-00",
+          "index": 0,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 01",
+          "image": "assets/images/inputs/physical-tabletop/input-00.webp",
+          "raw_node": "/Raw/wrist/0",
+          "ours_node": "/Ours/wrist/0"
+        },
+        {
+          "id": "input-01",
+          "index": 1,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 02",
+          "image": "assets/images/inputs/physical-tabletop/input-01.webp",
+          "raw_node": "/Raw/wrist/1",
+          "ours_node": "/Ours/wrist/1"
+        },
+        {
+          "id": "input-02",
+          "index": 2,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 03",
+          "image": "assets/images/inputs/physical-tabletop/input-02.webp",
+          "raw_node": "/Raw/wrist/2",
+          "ours_node": "/Ours/wrist/2"
+        },
+        {
+          "id": "input-03",
+          "index": 3,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 04",
+          "image": "assets/images/inputs/physical-tabletop/input-03.webp",
+          "raw_node": "/Raw/wrist/3",
+          "ours_node": "/Ours/wrist/3"
+        },
+        {
+          "id": "input-04",
+          "index": 4,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 05",
+          "image": "assets/images/inputs/physical-tabletop/input-04.webp",
+          "raw_node": "/Raw/wrist/4",
+          "ours_node": "/Ours/wrist/4"
+        },
+        {
+          "id": "input-05",
+          "index": 5,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 06",
+          "image": "assets/images/inputs/physical-tabletop/input-05.webp",
+          "raw_node": "/Raw/wrist/5",
+          "ours_node": "/Ours/wrist/5"
+        },
+        {
+          "id": "input-06",
+          "index": 6,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 07",
+          "image": "assets/images/inputs/physical-tabletop/input-06.webp",
+          "raw_node": "/Raw/wrist/6",
+          "ours_node": "/Ours/wrist/6"
+        },
+        {
+          "id": "input-07",
+          "index": 7,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 08",
+          "image": "assets/images/inputs/physical-tabletop/input-07.webp",
+          "raw_node": "/Raw/wrist/7",
+          "ours_node": "/Ours/wrist/7"
+        },
+        {
+          "id": "input-08",
+          "index": 8,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 09",
+          "image": "assets/images/inputs/physical-tabletop/input-08.webp",
+          "raw_node": "/Raw/wrist/8",
+          "ours_node": "/Ours/wrist/8"
+        },
+        {
+          "id": "input-09",
+          "index": 9,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 10",
+          "image": "assets/images/inputs/physical-tabletop/input-09.webp",
+          "raw_node": "/Raw/wrist/9",
+          "ours_node": "/Ours/wrist/9"
+        },
+        {
+          "id": "input-10",
+          "index": 10,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 11",
+          "image": "assets/images/inputs/physical-tabletop/input-10.webp",
+          "raw_node": "/Raw/wrist/10",
+          "ours_node": "/Ours/wrist/10"
+        },
+        {
+          "id": "input-11",
+          "index": 11,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 12",
+          "image": "assets/images/inputs/physical-tabletop/input-11.webp",
+          "raw_node": "/Raw/wrist/11",
+          "ours_node": "/Ours/wrist/11"
+        },
+        {
+          "id": "input-12",
+          "index": 12,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 13",
+          "image": "assets/images/inputs/physical-tabletop/input-12.webp",
+          "raw_node": "/Raw/wrist/12",
+          "ours_node": "/Ours/wrist/12"
+        },
+        {
+          "id": "input-13",
+          "index": 13,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 14",
+          "image": "assets/images/inputs/physical-tabletop/input-13.webp",
+          "raw_node": "/Raw/wrist/13",
+          "ours_node": "/Ours/wrist/13"
+        },
+        {
+          "id": "input-14",
+          "index": 14,
+          "role": "wrist",
+          "camera_index": 0,
+          "label": "Wrist 15",
+          "image": "assets/images/inputs/physical-tabletop/input-14.webp",
+          "raw_node": "/Raw/wrist/14",
+          "ours_node": "/Ours/wrist/14"
+        },
+        {
+          "id": "input-15",
+          "index": 15,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 1",
+          "image": "assets/images/inputs/physical-tabletop/input-15.webp",
+          "raw_node": "/Raw/fixed/0",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-16",
+          "index": 16,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 2",
+          "image": "assets/images/inputs/physical-tabletop/input-16.webp",
+          "raw_node": "/Raw/fixed/1",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-17",
+          "index": 17,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 3",
+          "image": "assets/images/inputs/physical-tabletop/input-17.webp",
+          "raw_node": "/Raw/fixed/2",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-18",
+          "index": 18,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 4",
+          "image": "assets/images/inputs/physical-tabletop/input-18.webp",
+          "raw_node": "/Raw/fixed/3",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-19",
+          "index": 19,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 5",
+          "image": "assets/images/inputs/physical-tabletop/input-19.webp",
+          "raw_node": "/Raw/fixed/4",
+          "ours_node": "/Ours/fixed/0"
+        }
+      ],
+      "poster": "assets/images/scene-physical-tabletop.png",
+      "note": "",
+      "file": {
+        "path": "assets/scenes/physical-tabletop.viser",
+        "bytes": 7311214
+      }
+    },
+    {
+      "id": "sim-room",
+      "label": "Simulation \u00b7 Room",
+      "domain": "simulation",
+      "case_id": "three-vggt-n15-87205b6f6f1f",
+      "seed": 7220,
+      "points": 1800000,
+      "wrist_poses": 15,
+      "fixed_cameras": 4,
+      "point_size": 0.002,
+      "point_shape": "square",
+      "filters": {
+        "confidence_percentile": 10,
+        "dark_cutoff": 0,
+        "max_distance": 0,
+        "stride": 1,
+        "sor_enabled": false
+      },
+      "figure5_exact_points": false,
+      "transform": {
+        "scale": 2.246382610893052,
+        "position": [
+          0.5668858790893684,
+          -0.204390726192995,
+          0.7828954546899792
+        ],
+        "wxyz": [
+          -0.45811774470216565,
+          0.5805790412881379,
+          -0.5373343782899495,
+          0.4053737469468165
+        ],
+        "rotation": [
+          [
+            0.09388778238810343,
+            -0.252512342971989,
+            0.9630278297977894
+          ],
+          [
+            -0.9953479698229568,
+            -0.0027997957935101026,
+            0.09630462145106428
+          ],
+          [
+            -0.021621824334737846,
+            -0.9675896226140046,
+            -0.2516005145505995
+          ]
+        ]
+      },
+      "camera": {
+        "position": [
+          -2.9797274491760843,
+          -2.7278487185778815,
+          4.110610437048996
+        ],
+        "look_at": [
+          1.6657219779102104,
+          0.22300000355787897,
+          0.9023136280652536
+        ],
+        "up": [
+          0.4251168830929105,
+          0.27003966589727124,
+          0.86391794433931
+        ],
+        "fov": 1.3089969389957474
+      },
+      "inputs": [
+        {
+          "id": "input-00",
+          "index": 0,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 01",
+          "image": "assets/images/inputs/sim-room/input-00.webp",
+          "raw_node": "/Raw/wrist/0",
+          "ours_node": "/Ours/wrist/0"
+        },
+        {
+          "id": "input-01",
+          "index": 1,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 02",
+          "image": "assets/images/inputs/sim-room/input-01.webp",
+          "raw_node": "/Raw/wrist/1",
+          "ours_node": "/Ours/wrist/1"
+        },
+        {
+          "id": "input-02",
+          "index": 2,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 03",
+          "image": "assets/images/inputs/sim-room/input-02.webp",
+          "raw_node": "/Raw/wrist/2",
+          "ours_node": "/Ours/wrist/2"
+        },
+        {
+          "id": "input-03",
+          "index": 3,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 04",
+          "image": "assets/images/inputs/sim-room/input-03.webp",
+          "raw_node": "/Raw/wrist/3",
+          "ours_node": "/Ours/wrist/3"
+        },
+        {
+          "id": "input-04",
+          "index": 4,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 05",
+          "image": "assets/images/inputs/sim-room/input-04.webp",
+          "raw_node": "/Raw/wrist/4",
+          "ours_node": "/Ours/wrist/4"
+        },
+        {
+          "id": "input-05",
+          "index": 5,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 06",
+          "image": "assets/images/inputs/sim-room/input-05.webp",
+          "raw_node": "/Raw/wrist/5",
+          "ours_node": "/Ours/wrist/5"
+        },
+        {
+          "id": "input-06",
+          "index": 6,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 07",
+          "image": "assets/images/inputs/sim-room/input-06.webp",
+          "raw_node": "/Raw/wrist/6",
+          "ours_node": "/Ours/wrist/6"
+        },
+        {
+          "id": "input-07",
+          "index": 7,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 08",
+          "image": "assets/images/inputs/sim-room/input-07.webp",
+          "raw_node": "/Raw/wrist/7",
+          "ours_node": "/Ours/wrist/7"
+        },
+        {
+          "id": "input-08",
+          "index": 8,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 09",
+          "image": "assets/images/inputs/sim-room/input-08.webp",
+          "raw_node": "/Raw/wrist/8",
+          "ours_node": "/Ours/wrist/8"
+        },
+        {
+          "id": "input-09",
+          "index": 9,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 10",
+          "image": "assets/images/inputs/sim-room/input-09.webp",
+          "raw_node": "/Raw/wrist/9",
+          "ours_node": "/Ours/wrist/9"
+        },
+        {
+          "id": "input-10",
+          "index": 10,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 11",
+          "image": "assets/images/inputs/sim-room/input-10.webp",
+          "raw_node": "/Raw/wrist/10",
+          "ours_node": "/Ours/wrist/10"
+        },
+        {
+          "id": "input-11",
+          "index": 11,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 12",
+          "image": "assets/images/inputs/sim-room/input-11.webp",
+          "raw_node": "/Raw/wrist/11",
+          "ours_node": "/Ours/wrist/11"
+        },
+        {
+          "id": "input-12",
+          "index": 12,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 13",
+          "image": "assets/images/inputs/sim-room/input-12.webp",
+          "raw_node": "/Raw/wrist/12",
+          "ours_node": "/Ours/wrist/12"
+        },
+        {
+          "id": "input-13",
+          "index": 13,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 14",
+          "image": "assets/images/inputs/sim-room/input-13.webp",
+          "raw_node": "/Raw/wrist/13",
+          "ours_node": "/Ours/wrist/13"
+        },
+        {
+          "id": "input-14",
+          "index": 14,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 15",
+          "image": "assets/images/inputs/sim-room/input-14.webp",
+          "raw_node": "/Raw/wrist/14",
+          "ours_node": "/Ours/wrist/14"
+        },
+        {
+          "id": "input-15",
+          "index": 15,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 1",
+          "image": "assets/images/inputs/sim-room/input-15.webp",
+          "raw_node": "/Raw/fixed/0",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-16",
+          "index": 16,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 2",
+          "image": "assets/images/inputs/sim-room/input-16.webp",
+          "raw_node": "/Raw/fixed/1",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-17",
+          "index": 17,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 3",
+          "image": "assets/images/inputs/sim-room/input-17.webp",
+          "raw_node": "/Raw/fixed/2",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-18",
+          "index": 18,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 4",
+          "image": "assets/images/inputs/sim-room/input-18.webp",
+          "raw_node": "/Raw/fixed/3",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-19",
+          "index": 19,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 5",
+          "image": "assets/images/inputs/sim-room/input-19.webp",
+          "raw_node": "/Raw/fixed/4",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-20",
+          "index": 20,
+          "role": "fixed",
+          "camera_index": 1,
+          "label": "Fixed 2 \u00b7 frame 1",
+          "image": "assets/images/inputs/sim-room/input-20.webp",
+          "raw_node": "/Raw/fixed/5",
+          "ours_node": "/Ours/fixed/1"
+        },
+        {
+          "id": "input-21",
+          "index": 21,
+          "role": "fixed",
+          "camera_index": 1,
+          "label": "Fixed 2 \u00b7 frame 2",
+          "image": "assets/images/inputs/sim-room/input-21.webp",
+          "raw_node": "/Raw/fixed/6",
+          "ours_node": "/Ours/fixed/1"
+        },
+        {
+          "id": "input-22",
+          "index": 22,
+          "role": "fixed",
+          "camera_index": 1,
+          "label": "Fixed 2 \u00b7 frame 3",
+          "image": "assets/images/inputs/sim-room/input-22.webp",
+          "raw_node": "/Raw/fixed/7",
+          "ours_node": "/Ours/fixed/1"
+        },
+        {
+          "id": "input-23",
+          "index": 23,
+          "role": "fixed",
+          "camera_index": 1,
+          "label": "Fixed 2 \u00b7 frame 4",
+          "image": "assets/images/inputs/sim-room/input-23.webp",
+          "raw_node": "/Raw/fixed/8",
+          "ours_node": "/Ours/fixed/1"
+        },
+        {
+          "id": "input-24",
+          "index": 24,
+          "role": "fixed",
+          "camera_index": 1,
+          "label": "Fixed 2 \u00b7 frame 5",
+          "image": "assets/images/inputs/sim-room/input-24.webp",
+          "raw_node": "/Raw/fixed/9",
+          "ours_node": "/Ours/fixed/1"
+        },
+        {
+          "id": "input-25",
+          "index": 25,
+          "role": "fixed",
+          "camera_index": 2,
+          "label": "Fixed 3 \u00b7 frame 1",
+          "image": "assets/images/inputs/sim-room/input-25.webp",
+          "raw_node": "/Raw/fixed/10",
+          "ours_node": "/Ours/fixed/2"
+        },
+        {
+          "id": "input-26",
+          "index": 26,
+          "role": "fixed",
+          "camera_index": 2,
+          "label": "Fixed 3 \u00b7 frame 2",
+          "image": "assets/images/inputs/sim-room/input-26.webp",
+          "raw_node": "/Raw/fixed/11",
+          "ours_node": "/Ours/fixed/2"
+        },
+        {
+          "id": "input-27",
+          "index": 27,
+          "role": "fixed",
+          "camera_index": 2,
+          "label": "Fixed 3 \u00b7 frame 3",
+          "image": "assets/images/inputs/sim-room/input-27.webp",
+          "raw_node": "/Raw/fixed/12",
+          "ours_node": "/Ours/fixed/2"
+        },
+        {
+          "id": "input-28",
+          "index": 28,
+          "role": "fixed",
+          "camera_index": 2,
+          "label": "Fixed 3 \u00b7 frame 4",
+          "image": "assets/images/inputs/sim-room/input-28.webp",
+          "raw_node": "/Raw/fixed/13",
+          "ours_node": "/Ours/fixed/2"
+        },
+        {
+          "id": "input-29",
+          "index": 29,
+          "role": "fixed",
+          "camera_index": 2,
+          "label": "Fixed 3 \u00b7 frame 5",
+          "image": "assets/images/inputs/sim-room/input-29.webp",
+          "raw_node": "/Raw/fixed/14",
+          "ours_node": "/Ours/fixed/2"
+        },
+        {
+          "id": "input-30",
+          "index": 30,
+          "role": "fixed",
+          "camera_index": 3,
+          "label": "Fixed 4 \u00b7 frame 1",
+          "image": "assets/images/inputs/sim-room/input-30.webp",
+          "raw_node": "/Raw/fixed/15",
+          "ours_node": "/Ours/fixed/3"
+        },
+        {
+          "id": "input-31",
+          "index": 31,
+          "role": "fixed",
+          "camera_index": 3,
+          "label": "Fixed 4 \u00b7 frame 2",
+          "image": "assets/images/inputs/sim-room/input-31.webp",
+          "raw_node": "/Raw/fixed/16",
+          "ours_node": "/Ours/fixed/3"
+        },
+        {
+          "id": "input-32",
+          "index": 32,
+          "role": "fixed",
+          "camera_index": 3,
+          "label": "Fixed 4 \u00b7 frame 3",
+          "image": "assets/images/inputs/sim-room/input-32.webp",
+          "raw_node": "/Raw/fixed/17",
+          "ours_node": "/Ours/fixed/3"
+        },
+        {
+          "id": "input-33",
+          "index": 33,
+          "role": "fixed",
+          "camera_index": 3,
+          "label": "Fixed 4 \u00b7 frame 4",
+          "image": "assets/images/inputs/sim-room/input-33.webp",
+          "raw_node": "/Raw/fixed/18",
+          "ours_node": "/Ours/fixed/3"
+        },
+        {
+          "id": "input-34",
+          "index": 34,
+          "role": "fixed",
+          "camera_index": 3,
+          "label": "Fixed 4 \u00b7 frame 5",
+          "image": "assets/images/inputs/sim-room/input-34.webp",
+          "raw_node": "/Raw/fixed/19",
+          "ours_node": "/Ours/fixed/3"
+        }
+      ],
+      "poster": "assets/images/scene-sim-room.png",
+      "note": "",
+      "file": {
+        "path": "assets/scenes/sim-room.viser",
+        "bytes": 23633211
+      }
+    },
+    {
+      "id": "sim-tabletop",
+      "label": "Simulation \u00b7 Tabletop",
+      "domain": "simulation",
+      "case_id": "three-vggt-n15-6cae8017d1b0",
+      "seed": 589,
+      "points": 1800000,
+      "wrist_poses": 15,
+      "fixed_cameras": 4,
+      "point_size": 0.002,
+      "point_shape": "square",
+      "filters": {
+        "confidence_percentile": 10,
+        "dark_cutoff": 0,
+        "max_distance": 0,
+        "stride": 1,
+        "sor_enabled": false
+      },
+      "figure5_exact_points": false,
+      "transform": {
+        "scale": 2.7765447660190254,
+        "position": [
+          0.0882705787300848,
+          -0.17391384286873085,
+          0.9629414395070651
+        ],
+        "wxyz": [
+          -0.4920690711632011,
+          0.5432986714528366,
+          -0.5128840409020412,
+          0.4468160061928852
+        ],
+        "rotation": [
+          [
+            0.07461083439566596,
+            -0.11756976176651426,
+            0.9902578323391074
+          ],
+          [
+            -0.997027110359251,
+            0.010364020414844731,
+            0.07635134766016034
+          ],
+          [
+            -0.019239662145279623,
+            -0.9930105428438335,
+            -0.11644697162884797
+          ]
+        ]
+      },
+      "camera": {
+        "position": [
+          -3.7888060841629256,
+          -5.572754043709246,
+          6.631211755874023
+        ],
+        "look_at": [
+          3.7716433491142283,
+          -0.7702601409931474,
+          1.4097221730071363
+        ],
+        "up": [
+          0.4251168830929105,
+          0.2700396658972712,
+          0.86391794433931
+        ],
+        "fov": 1.3089969389957474
+      },
+      "inputs": [
+        {
+          "id": "input-00",
+          "index": 0,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 01",
+          "image": "assets/images/inputs/sim-tabletop/input-00.webp",
+          "raw_node": "/Raw/wrist/0",
+          "ours_node": "/Ours/wrist/0"
+        },
+        {
+          "id": "input-01",
+          "index": 1,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 02",
+          "image": "assets/images/inputs/sim-tabletop/input-01.webp",
+          "raw_node": "/Raw/wrist/1",
+          "ours_node": "/Ours/wrist/1"
+        },
+        {
+          "id": "input-02",
+          "index": 2,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 03",
+          "image": "assets/images/inputs/sim-tabletop/input-02.webp",
+          "raw_node": "/Raw/wrist/2",
+          "ours_node": "/Ours/wrist/2"
+        },
+        {
+          "id": "input-03",
+          "index": 3,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 04",
+          "image": "assets/images/inputs/sim-tabletop/input-03.webp",
+          "raw_node": "/Raw/wrist/3",
+          "ours_node": "/Ours/wrist/3"
+        },
+        {
+          "id": "input-04",
+          "index": 4,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 05",
+          "image": "assets/images/inputs/sim-tabletop/input-04.webp",
+          "raw_node": "/Raw/wrist/4",
+          "ours_node": "/Ours/wrist/4"
+        },
+        {
+          "id": "input-05",
+          "index": 5,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 06",
+          "image": "assets/images/inputs/sim-tabletop/input-05.webp",
+          "raw_node": "/Raw/wrist/5",
+          "ours_node": "/Ours/wrist/5"
+        },
+        {
+          "id": "input-06",
+          "index": 6,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 07",
+          "image": "assets/images/inputs/sim-tabletop/input-06.webp",
+          "raw_node": "/Raw/wrist/6",
+          "ours_node": "/Ours/wrist/6"
+        },
+        {
+          "id": "input-07",
+          "index": 7,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 08",
+          "image": "assets/images/inputs/sim-tabletop/input-07.webp",
+          "raw_node": "/Raw/wrist/7",
+          "ours_node": "/Ours/wrist/7"
+        },
+        {
+          "id": "input-08",
+          "index": 8,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 09",
+          "image": "assets/images/inputs/sim-tabletop/input-08.webp",
+          "raw_node": "/Raw/wrist/8",
+          "ours_node": "/Ours/wrist/8"
+        },
+        {
+          "id": "input-09",
+          "index": 9,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 10",
+          "image": "assets/images/inputs/sim-tabletop/input-09.webp",
+          "raw_node": "/Raw/wrist/9",
+          "ours_node": "/Ours/wrist/9"
+        },
+        {
+          "id": "input-10",
+          "index": 10,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 11",
+          "image": "assets/images/inputs/sim-tabletop/input-10.webp",
+          "raw_node": "/Raw/wrist/10",
+          "ours_node": "/Ours/wrist/10"
+        },
+        {
+          "id": "input-11",
+          "index": 11,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 12",
+          "image": "assets/images/inputs/sim-tabletop/input-11.webp",
+          "raw_node": "/Raw/wrist/11",
+          "ours_node": "/Ours/wrist/11"
+        },
+        {
+          "id": "input-12",
+          "index": 12,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 13",
+          "image": "assets/images/inputs/sim-tabletop/input-12.webp",
+          "raw_node": "/Raw/wrist/12",
+          "ours_node": "/Ours/wrist/12"
+        },
+        {
+          "id": "input-13",
+          "index": 13,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 14",
+          "image": "assets/images/inputs/sim-tabletop/input-13.webp",
+          "raw_node": "/Raw/wrist/13",
+          "ours_node": "/Ours/wrist/13"
+        },
+        {
+          "id": "input-14",
+          "index": 14,
+          "role": "wrist",
+          "camera_index": 1,
+          "label": "Wrist 15",
+          "image": "assets/images/inputs/sim-tabletop/input-14.webp",
+          "raw_node": "/Raw/wrist/14",
+          "ours_node": "/Ours/wrist/14"
+        },
+        {
+          "id": "input-15",
+          "index": 15,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 1",
+          "image": "assets/images/inputs/sim-tabletop/input-15.webp",
+          "raw_node": "/Raw/fixed/0",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-16",
+          "index": 16,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 2",
+          "image": "assets/images/inputs/sim-tabletop/input-16.webp",
+          "raw_node": "/Raw/fixed/1",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-17",
+          "index": 17,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 3",
+          "image": "assets/images/inputs/sim-tabletop/input-17.webp",
+          "raw_node": "/Raw/fixed/2",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-18",
+          "index": 18,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 4",
+          "image": "assets/images/inputs/sim-tabletop/input-18.webp",
+          "raw_node": "/Raw/fixed/3",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-19",
+          "index": 19,
+          "role": "fixed",
+          "camera_index": 0,
+          "label": "Fixed 1 \u00b7 frame 5",
+          "image": "assets/images/inputs/sim-tabletop/input-19.webp",
+          "raw_node": "/Raw/fixed/4",
+          "ours_node": "/Ours/fixed/0"
+        },
+        {
+          "id": "input-20",
+          "index": 20,
+          "role": "fixed",
+          "camera_index": 1,
+          "label": "Fixed 2 \u00b7 frame 1",
+          "image": "assets/images/inputs/sim-tabletop/input-20.webp",
+          "raw_node": "/Raw/fixed/5",
+          "ours_node": "/Ours/fixed/1"
+        },
+        {
+          "id": "input-21",
+          "index": 21,
+          "role": "fixed",
+          "camera_index": 1,
+          "label": "Fixed 2 \u00b7 frame 2",
+          "image": "assets/images/inputs/sim-tabletop/input-21.webp",
+          "raw_node": "/Raw/fixed/6",
+          "ours_node": "/Ours/fixed/1"
+        },
+        {
+          "id": "input-22",
+          "index": 22,
+          "role": "fixed",
+          "camera_index": 1,
+          "label": "Fixed 2 \u00b7 frame 3",
+          "image": "assets/images/inputs/sim-tabletop/input-22.webp",
+          "raw_node": "/Raw/fixed/7",
+          "ours_node": "/Ours/fixed/1"
+        },
+        {
+          "id": "input-23",
+          "index": 23,
+          "role": "fixed",
+          "camera_index": 1,
+          "label": "Fixed 2 \u00b7 frame 4",
+          "image": "assets/images/inputs/sim-tabletop/input-23.webp",
+          "raw_node": "/Raw/fixed/8",
+          "ours_node": "/Ours/fixed/1"
+        },
+        {
+          "id": "input-24",
+          "index": 24,
+          "role": "fixed",
+          "camera_index": 1,
+          "label": "Fixed 2 \u00b7 frame 5",
+          "image": "assets/images/inputs/sim-tabletop/input-24.webp",
+          "raw_node": "/Raw/fixed/9",
+          "ours_node": "/Ours/fixed/1"
+        },
+        {
+          "id": "input-25",
+          "index": 25,
+          "role": "fixed",
+          "camera_index": 2,
+          "label": "Fixed 3 \u00b7 frame 1",
+          "image": "assets/images/inputs/sim-tabletop/input-25.webp",
+          "raw_node": "/Raw/fixed/10",
+          "ours_node": "/Ours/fixed/2"
+        },
+        {
+          "id": "input-26",
+          "index": 26,
+          "role": "fixed",
+          "camera_index": 2,
+          "label": "Fixed 3 \u00b7 frame 2",
+          "image": "assets/images/inputs/sim-tabletop/input-26.webp",
+          "raw_node": "/Raw/fixed/11",
+          "ours_node": "/Ours/fixed/2"
+        },
+        {
+          "id": "input-27",
+          "index": 27,
+          "role": "fixed",
+          "camera_index": 2,
+          "label": "Fixed 3 \u00b7 frame 3",
+          "image": "assets/images/inputs/sim-tabletop/input-27.webp",
+          "raw_node": "/Raw/fixed/12",
+          "ours_node": "/Ours/fixed/2"
+        },
+        {
+          "id": "input-28",
+          "index": 28,
+          "role": "fixed",
+          "camera_index": 2,
+          "label": "Fixed 3 \u00b7 frame 4",
+          "image": "assets/images/inputs/sim-tabletop/input-28.webp",
+          "raw_node": "/Raw/fixed/13",
+          "ours_node": "/Ours/fixed/2"
+        },
+        {
+          "id": "input-29",
+          "index": 29,
+          "role": "fixed",
+          "camera_index": 2,
+          "label": "Fixed 3 \u00b7 frame 5",
+          "image": "assets/images/inputs/sim-tabletop/input-29.webp",
+          "raw_node": "/Raw/fixed/14",
+          "ours_node": "/Ours/fixed/2"
+        },
+        {
+          "id": "input-30",
+          "index": 30,
+          "role": "fixed",
+          "camera_index": 3,
+          "label": "Fixed 4 \u00b7 frame 1",
+          "image": "assets/images/inputs/sim-tabletop/input-30.webp",
+          "raw_node": "/Raw/fixed/15",
+          "ours_node": "/Ours/fixed/3"
+        },
+        {
+          "id": "input-31",
+          "index": 31,
+          "role": "fixed",
+          "camera_index": 3,
+          "label": "Fixed 4 \u00b7 frame 2",
+          "image": "assets/images/inputs/sim-tabletop/input-31.webp",
+          "raw_node": "/Raw/fixed/16",
+          "ours_node": "/Ours/fixed/3"
+        },
+        {
+          "id": "input-32",
+          "index": 32,
+          "role": "fixed",
+          "camera_index": 3,
+          "label": "Fixed 4 \u00b7 frame 3",
+          "image": "assets/images/inputs/sim-tabletop/input-32.webp",
+          "raw_node": "/Raw/fixed/17",
+          "ours_node": "/Ours/fixed/3"
+        },
+        {
+          "id": "input-33",
+          "index": 33,
+          "role": "fixed",
+          "camera_index": 3,
+          "label": "Fixed 4 \u00b7 frame 4",
+          "image": "assets/images/inputs/sim-tabletop/input-33.webp",
+          "raw_node": "/Raw/fixed/18",
+          "ours_node": "/Ours/fixed/3"
+        },
+        {
+          "id": "input-34",
+          "index": 34,
+          "role": "fixed",
+          "camera_index": 3,
+          "label": "Fixed 4 \u00b7 frame 5",
+          "image": "assets/images/inputs/sim-tabletop/input-34.webp",
+          "raw_node": "/Raw/fixed/19",
+          "ours_node": "/Ours/fixed/3"
+        }
+      ],
+      "poster": "assets/images/scene-sim-tabletop.png",
+      "note": "The last fixed-camera pose retains the fallback after registration rejection.",
+      "file": {
+        "path": "assets/scenes/sim-tabletop.viser",
+        "bytes": 24314422
+      }
+    }
+  ]
+}

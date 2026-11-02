@@ -1,0 +1,62 @@
+{
+  "title": "AnchorHEC: Targetless Hand-Eye Calibration of Wrist and Fixed Cameras",
+  "description": "Targetless calibration of wrist and fixed cameras in a single procedure using RGB images, robot forward kinematics, and known camera intrinsics.",
+  "year": 2026,
+  "status": "Research project",
+  "canonical_url": "https://hwanggb.github.io/AnchorHEC/",
+  "repository_url": "https://github.com/HwangGB/AnchorHEC",
+  "authors": [
+    {
+      "name": "Guebin Hwang",
+      "url": "",
+      "affiliations": [
+        1
+      ]
+    },
+    {
+      "name": "Taeyeop Lee",
+      "url": "",
+      "affiliations": [
+        1
+      ]
+    },
+    {
+      "name": "Yeonseo Lee",
+      "url": "",
+      "affiliations": [
+        1
+      ]
+    },
+    {
+      "name": "Hyosup Shin",
+      "url": "",
+      "affiliations": [
+        1
+      ]
+    },
+    {
+      "name": "Sungho Jo",
+      "url": "",
+      "affiliations": [
+        1
+      ],
+      "corresponding": true
+    }
+  ],
+  "affiliations": [
+    {
+      "id": 1,
+      "name": "Korea Advanced Institute of Science and Technology (KAIST), Daejeon, South Korea",
+      "url": ""
+    }
+  ],
+  "contact_email": "",
+  "paper_url": "",
+  "arxiv_url": "",
+  "arxiv_id": "",
+  "code_url": "",
+  "dataset_url": "",
+  "code_status": "Code release in preparation.",
+  "dataset_status": "Selected 3D scenes, input-image previews, and manuscript tables are shown above. Full-resolution image acquisitions are not currently released.",
+  "abstract": "Recent robot systems combine wrist and fixed cameras, requiring camera-to-robot transforms for both. Most hand-eye calibration methods rely on targets or robot-body observations. Scene-based methods using 3D reconstruction require neither but address only wrist cameras. We introduce AnchorHEC, a targetless hand-eye calibration framework for wrist and fixed cameras in a single procedure using RGB images, forward kinematics (FK), and known camera intrinsics. We initialize both camera types using FK and a shared 3D foundation model reconstruction. FK-constrained wrist-image bundle adjustment reduces the impact of reconstructed pose and scale errors. If this refinement fails or retains too few inliers, we relax the constraints on potentially inaccurate FK poses and lens parameters. We use the refined wrist transform and FK to triangulate metric points and estimate fixed-camera poses. Across three backbones, calibration errors in simulation decrease by 86.4% in translation and 71.6% in rotation, averaged over both camera types, relative to reconstruction-based baselines. We also validate AnchorHEC on a physical robot."
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "file": "assets/images/pipeline.webp",
+    "source": "HEVFM/paper/figures/final/fig1_final.png",
+    "source_sha256": "5c64515711b58cac43e244c8407cca2b7b30e63b1327b526db2eb0eed8c8d0a8",
+    "processing": "lossless WebP encoding, original dimensions, alpha and rendered pixels; fully transparent RGB may be normalized",
+    "dimensions": [
+      2918,
+      1500
+    ]
+  },
+  {
+    "file": "assets/images/simulation.webp",
+    "source": "HEVFM/paper/figures/final/fig4_final.png",
+    "source_sha256": "5c21bce9e650e7276b6124c04c165f587f8b9838995b098a7082700cc4ef56ef",
+    "processing": "lossless WebP encoding, original dimensions, alpha and rendered pixels; fully transparent RGB may be normalized",
+    "dimensions": [
+      853,
+      641
+    ]
+  },
+  {
+    "file": "assets/images/physical.webp",
+    "source": "HEVFM/paper/figures/final/fig5_new.png",
+    "source_sha256": "aafed64d8bebfc14b402884649dad9cfe9baf8710eb09f527285e21c7c602ebb",
+    "processing": "lossless WebP encoding, original dimensions, alpha and rendered pixels; fully transparent RGB may be normalized",
+    "dimensions": [
+      2261,
+      393
+    ]
+  },
+  {
+    "file": "assets/images/setup.webp",
+    "source": "HEVFM/paper/video_20261013/shots/s_room_setup_labeled.png",
+    "source_sha256": "3ca957de43045cda100700cf07c19142c8d06e8b7e80fb23fdb42dab1eeeae3a",
+    "processing": "lossless WebP encoding, original dimensions, alpha and rendered pixels; fully transparent RGB may be normalized",
+    "dimensions": [
+      901,
+      831
+    ]
+  },
+  {
+    "file": "assets/images/reconstruction.webp",
+    "source": "HEVFM/paper/video_20261013/shots/s20_physical_landing_still.png",
+    "source_sha256": "3de611b6174e2b89393ca96498fc8ba14d52ca509844ae81162aa3f2d05e70a4",
+    "processing": "lossless WebP encoding, original dimensions, alpha and rendered pixels; fully transparent RGB may be normalized",
+    "dimensions": [
+      1280,
+      520
+    ]
+  },
+  {
+    "file": "assets/images/physical-scenes.webp",
+    "source": "HEVFM/paper/video_20261013/shots/s17_physical_two_up.jpg",
+    "source_sha256": "b401b28d16c7768f473eeef44af27885e43889f0a0a426510c62c81446f5fc88",
+    "processing": "lossless WebP encoding, original dimensions, alpha and rendered pixels; fully transparent RGB may be normalized",
+    "dimensions": [
+      1280,
+      520
+    ]
+  },
+  {
+    "file": "assets/videos/overview.mp4",
+    "source": "HEVFM/paper/video_20261013/AnchorHEC_supplementary/AnchorHEC_video.mp4",
+    "source_sha256": "a242d504dc7452b638fc5cca90851c0b4ca9aca4eae4f5dbd106e39e60bdd028",
+    "processing": "byte-for-byte copy"
+  }
+]
