@@ -10,6 +10,7 @@
   <meta name="citation_author" content="Yeonseo Lee">
   <meta name="citation_author" content="Hyosup Shin">
   <meta name="citation_author" content="Sungho Jo">
+  <meta name="citation_arxiv_id" content="2611.02884">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/css/site.css"><script defer src="assets/js/site.js"></script>
 </head>
 <body>
@@ -18,7 +19,7 @@
   <section class="publication-header container" aria-labelledby="title">
     <h1 id="title">AnchorHEC: Targetless Hand-Eye Calibration<br class="title-break"> of Wrist and Fixed Cameras</h1>
     <div class="author-block"><p class="authors"><span class="author">Guebin Hwang</span> <span class="author">Taeyeop Lee</span> <span class="author">Yeonseo Lee</span> <span class="author">Hyosup Shin</span> <span class="author">Sungho Jo<sup>†</sup></span></p><p class="affiliations"><span>Korea Advanced Institute of Science and Technology (KAIST), Daejeon, South Korea</span></p><p class="corresponding-note">† Corresponding author</p></div>
-    <div class="publication-links"><button class="button" type="button" disabled title="Paper link coming soon" aria-label="Paper (coming soon)"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M6 3h8l4 4v14H6Z M14 3v5h4 M9 12h6 M9 16h6"/></svg>Paper</button><button class="button" type="button" disabled title="Code link coming soon" aria-label="Code (coming soon)"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg>Code</button><a class="button" href="#video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7Z"/></svg>Video</a><a class="button" href="#interactive"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="m12 2 9 5v10l-9 5-9-5V7Zm0 10 9-5M12 12 3 7m9 5v10"/></svg>3D Viewer</a></div>
+    <div class="publication-links"><a class="button" href="https://arxiv.org/abs/2611.02884"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M6 3h8l4 4v14H6Z M14 3v5h4 M9 12h6 M9 16h6"/></svg>Paper</a><button class="button" type="button" disabled title="Code link coming soon" aria-label="Code (coming soon)"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg>Code</button><a class="button" href="#video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7Z"/></svg>Video</a><a class="button" href="#interactive"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="m12 2 9 5v10l-9 5-9-5V7Zm0 10 9-5M12 12 3 7m9 5v10"/></svg>3D Viewer</a></div>
   </section>
   <section class="teaser container" aria-label="Overview"><figure>
     <a href="assets/images/pipeline.webp" class="figure-link" data-zoom data-caption="AnchorHEC overview · Figure 1" aria-label="Enlarge the method overview"><img src="assets/images/pipeline.webp" alt="Wrist and optional fixed-camera images, robot end-effector poses and known intrinsics are used for shared reconstruction initialization, wrist refinement, and fixed-camera registration." width="2918" height="1500" fetchpriority="high"></a>
@@ -62,7 +63,15 @@
     <figure class="paper-table physical-table"><a class="figure-link" href="assets/images/table-iv.png" data-zoom data-caption="Physical-robot calibration errors · Table IV" aria-label="Enlarge Table IV"><img src="assets/images/table-iv.png" width="1055" height="917" loading="lazy" alt="Table IV from the manuscript. Physical room and tabletop calibration errors at 5, 15, and 25 wrist poses, including the failed-output note. Zhi has lower tabletop wrist rotation error at 15 poses (1.09 degrees versus 1.11 for AnchorHEC)."></a><figcaption>Table IV. Physical-robot results from the manuscript. Click to enlarge.</figcaption></figure>
   </section>
 
-  <section class="section container narrow citation-section" id="citation" aria-labelledby="citation-title"><h2 id="citation-title">BibTeX</h2><div class="citation-content"><p class="citation-pending">Citation details will be added with the public preprint.</p></div></section>
+  <section class="section container narrow citation-section" id="citation" aria-labelledby="citation-title"><h2 id="citation-title">BibTeX</h2><div class="citation-content"><div class="citation-box"><div class="citation-toolbar"><span>BibTeX</span><button class="text-link" id="copy-citation" type="button" aria-live="polite">Copy BibTeX</button></div><pre><code id="bibtex">@misc{anchorhec2026,
+  title = {AnchorHEC: Targetless Hand-Eye Calibration of Wrist and Fixed Cameras},
+  author = {Guebin Hwang and Taeyeop Lee and Yeonseo Lee and Hyosup Shin and Sungho Jo},
+  year = {2026},
+  eprint = {2611.02884},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2611.02884}
+}
+</code></pre></div></div></section>
 </main>
 <footer class="footer"><div class="container narrow"><p>Page layout inspired by <a href="https://nerfies.github.io/">Nerfies</a>. Interactive scenes use <a href="https://viser.studio/">Viser</a>.</p><p><a href="https://github.com/HwangGB/AnchorHEC">Website source</a> · <a href="credits.html">Credits and usage</a></p></div></footer>
 <dialog id="figure-dialog" aria-labelledby="figure-dialog-caption"><button class="dialog-close" aria-label="Close enlarged figure">×</button><figure><img id="figure-dialog-image" alt=""><figcaption id="figure-dialog-caption"></figcaption></figure><a id="figure-original" target="_blank" rel="noopener">Open original image ↗</a></dialog>
